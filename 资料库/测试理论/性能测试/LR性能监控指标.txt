@@ -1,0 +1,17 @@
+处理器：Processor
+1.%Processor Time：处理器执行非空闲线程的时间，ＣＰＵ运行时间（一般要小于85%）
+2.％User Time:用户模式的非闲置处理器时间的百分比，表示耗费cpu的数据库操作，如排序，如果该值很高，说明
+              可以考虑增加索引。
+
+系统system:Processor Quene length ,处理队列中的线程数。（小于等于CPU的个数）
+物理磁盘：Physical Disk（上十几M 和百M就要引起关注）
+1.Disk Read bytes/sec:磁盘每秒的读取速度
+2.Disk Write bytes/sec:磁盘每秒的写入速度
+
+
+网络：Network Interface:Bytes Total/sc(发送和接收的字节数)，一般小于7位就没问题，要小于当前带宽的一半
+
+内存：Memory:Available MBbytes:物理内存的剩余量，至少要有10%的剩余量
+
+
+

@@ -1,0 +1,13 @@
+[t50]
+FileName1=t50_spacer.gif
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/images/spacer.gif
+Total=1
+ContentType=image/gif
+SnapshotXmlFile=snapshot_50.xml
+RequestHeaderFile=t50_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t50_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

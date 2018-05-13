@@ -1,0 +1,13 @@
+[t40]
+FileName1=t40.htm
+URL1=http://192.168.0.106/testlink/lib/project/projectView.php
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_40.xml
+RequestHeaderFile=t40_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t40_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

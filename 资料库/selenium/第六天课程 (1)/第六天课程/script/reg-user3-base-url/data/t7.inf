@@ -1,0 +1,13 @@
+[t7]
+FileName1=t7_testlink_library.html
+URL1=http://192.168.0.106/testlink/gui/javascript/testlink_library.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_7.xml
+RequestHeaderFile=t7_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t7_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

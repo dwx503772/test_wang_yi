@@ -1,0 +1,13 @@
+[t18]
+FileName1=t18_ext-all.css
+URL1=http://192.168.0.106/testlink/third_party/ext-js/css/ext-all.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_18.xml
+RequestHeaderFile=t18_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t18_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

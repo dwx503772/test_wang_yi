@@ -1,0 +1,363 @@
+
+
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en" />
+	<meta http-equiv="expires" content="-1" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="author" content="Martin Havlat" />
+	<meta name="copyright" content="GNU" />
+	<meta name="robots" content="NOFOLLOW" />
+	<base href="http://192.168.0.106/testlink/"/>
+	<title>TestLink</title>
+	<link rel="icon" href="http://192.168.0.106/testlink/gui/themes/default/images/favicon.ico" type="image/x-icon" />
+	
+ 
+	<style media="all" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/testlink.css";</style>
+
+		
+	  
+	<style media="print" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/tl_print.css";</style>
+
+ 
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/testlink_library.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/test_automation.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/third_party/prototype/prototype.js" language="javascript"></script>
+	 
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/validate.js" language="javascript"></script>
+    
+
+<script type="text/javascript" src='gui/javascript/cfield_validation.js'></script>
+
+
+<script type="text/javascript">
+
+var cfMessages= new Object;
+cfMessages.warning_numeric_cf="Custom Field %s accepts only numeric values";
+cfMessages.warning_float_cf="Custom Field %s accepts only numeric or float values";
+cfMessages.warning_email_cf="Custom Field %s accepts only email addresses";
+cfMessages.warning_text_area_cf="Custom Field %s accepts only 255 characters";
+
+
+var cfChecks = new Object;
+cfChecks.email = /^(\w+)([-+.][\w]+)*@(\w[-\w]*\.){1,5}([A-Za-z]){2,4}$/;
+cfChecks.textarea_length = 255;
+
+</script>
+	   
+	
+		<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/sorttable.js" 
+		language="javascript"></script>
+	
+	<script type="text/javascript" language="javascript">
+	<!--
+	var fRoot = 'http://192.168.0.106/testlink/';
+	var menuUrl = '';
+	var args  = '';
+	var additionalArgs  = '';
+	
+	// To solve problem diplaying help
+	var SP_html_help_file  = '';
+	
+	//attachment related JS-Stuff
+	var attachmentDlg_refWindow = null;
+	var attachmentDlg_refLocation = null;
+	var attachmentDlg_bNoRefresh = false;
+	
+	// bug management (using logic similar to attachment)
+	var bug_dialog = new bug_dialog();
+
+	// for ext js
+	var extjsLocation = 'third_party/ext-js';
+	
+	//-->
+	</script> 
+
+
+  
+
+
+        <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/css/ext-all.css" />
+  <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/GridFilters.css" />
+  <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/RangeMenu.css" />
+  
+              <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/adapter/ext/ext-base.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ext-all.js" language="javascript"></script>
+      
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/Reorderer.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/ToolbarReorderer.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/ToolbarDroppable.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/Exporter-all.js" language="javascript"></script>
+      
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/RangeMenu.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/ListMenu.js" language="javascript"></script>
+      
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/GridFilters.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/Filter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/StringFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/DateFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/ListFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/NumericFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/BooleanFilter.js" language="javascript"></script>
+      
+      
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/src/locale/ext-lang-en_GB.js" language="javascript"></script>
+  
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/TableGrid.js" language="javascript"></script>
+  
+
+
+<script type="text/javascript">
+ 
+ 
+/*
+  function: delete_confirmation
+
+  args: o_id: object id, id of object on with do_action() will be done.
+              is not a DOM id, but an specific application id.
+              IMPORTANT: do_action() is a function defined in this file
+
+        o_name: name of object, used to to give user feedback.
+
+        title: pop up title
+                    
+        msg: can contain a wildcard (%s), that will be replaced
+             with o_name.     
+  
+  returns: 
+
+*/
+function delete_confirmation(o_id,o_name,title,msg,pFunction)
+{
+	var safe_name = o_name.escapeHTML();
+  var safe_title = title;
+  var my_msg = msg.replace('%s',safe_name);
+  if (!pFunction)
+  {
+		pFunction = do_action;
+  }
+  Ext.Msg.confirm(safe_title, my_msg,
+			            function(btn, text)
+			            { 
+					         pFunction(btn,text,o_id);
+			            });
+}
+
+/*
+  function: 
+
+  args:
+  
+  returns: 
+
+*/
+function init_yes_no_buttons(yes_btn,no_btn)
+{
+  Ext.MessageBox.buttonText.yes=yes_btn;
+  Ext.MessageBox.buttonText.no=no_btn;
+}
+/*
+  function: 
+
+  args:
+  
+  returns: 
+
+*/
+function do_action(btn, text, o_id)
+{ 
+  // IMPORTANT:
+  // del_action is defined in SMARTY TEMPLATE that is using this logic.
+  //
+	var my_action='';
+  
+  if( btn == 'yes' )
+  {
+    my_action=del_action+o_id;
+	  window.location=my_action;
+	}
+}					
+/*
+  function: 
+
+  args:
+  
+  returns: 
+
+*/
+function alert_message(title,msg)
+{
+  Ext.MessageBox.alert(title.escapeHTML(), msg.escapeHTML());
+}
+
+/**
+ * Displays an alert message. title and message must be escaped.
+ */
+function alert_message_html(title,msg)
+{
+  Ext.MessageBox.alert(title, msg);
+}
+
+</script>
+
+<script type="text/javascript">
+var alert_box_title = "Warning!!";
+var warning_empty_tcase_prefix = "Test Case ID prefix cannot be empty!";
+var warning_empty_tproject_name = "Project name cannot be empty!";
+
+function validateForm(f)
+{
+if (isWhitespace(f.tprojectName.value))
+{
+   alert_message(alert_box_title,warning_empty_tproject_name);
+   selectField(f, 'tprojectName');
+   return false;
+}
+if (isWhitespace(f.tcasePrefix.value))
+{
+   alert_message(alert_box_title,warning_empty_tcase_prefix);
+   selectField(f, 'tcasePrefix');
+   return false;
+}
+
+return true;
+}
+
+</script>
+</head>
+
+<body>
+<h1 class="title">
+	Test Project Management   : 
+	Create a new project
+	</h1>
+
+
+<div class="workBack">
+			<div style="width:80%; margin: auto;">
+		<form name="edit_testproject" id="edit_testproject"
+		      method="post" action="lib/project/projectEdit.php"
+		      onSubmit="javascript:return validateForm(this);">
+        <input type="hidden" name="csrf_protection_token" value="201608172801380d240be355be2b6b0dfd549f8ade71e080"/>
+		<table id="item_view" class="common" style="width:100%; padding:3px;">
+
+					    	 		<tr>
+	 			<td>Create from existing Test Project?</td>
+		 		<td>
+			 		<select name="copy_from_tproject_id">
+			 		<option value="0">No</option>
+			 					 			<option value="9">test1</option>
+			 					 		</select>
+		 		</td>
+	 		</tr>
+		 							<tr>
+				<td>Name *</td>
+				<td><input type="text" name="tprojectName" size="50"
+						value="" maxlength="100" />
+				  	<img id="error_icon_tprojectName" style="visibility: hidden;" 
+     src="gui/themes/default/images//error.gif" alt="error condition detected" 
+     title="error condition detected" width="1" height="1" />				</td>
+			</tr>
+			<tr>
+				<td>Prefix (used for Test case ID) *</td>
+				<td><input type="text" name="tcasePrefix" size="5"
+	  		           value="" maxlength="16" />
+				  	<img id="error_icon_tcasePrefix" style="visibility: hidden;" 
+     src="gui/themes/default/images//error.gif" alt="error condition detected" 
+     title="error condition detected" width="1" height="1" />				</td>
+			</tr>
+			<tr>
+				<td>Project description</td>
+				<td style="width:80%"><input type="hidden" id="notes" name="notes" value="" style="display:none" /><input type="hidden" id="notes___Config" value="CustomConfigurationsPath=http://192.168.0.106/testlink/cfg/tl_fckeditor_config.js" style="display:none" /><iframe id="notes___Frame" src="http://192.168.0.106/testlink/third_party/fckeditor/editor/fckeditor.html?InstanceName=notes&amp;Toolbar=tl_default" width="100%" height="200" frameborder="0" scrolling="no"></iframe></td>
+			</tr>
+						<tr>
+				<td>Enhanced features</td><td></td>
+			</tr>
+			<tr>
+				<td></td><td>
+				  	<input type="checkbox" name="optReq" 
+				  			 />
+					Enable Requirements feature
+				</td>
+			</tr>
+			<tr>
+				<td></td><td>
+					<input type="checkbox" name="optPriority" 
+							 />
+					Enable Testing Priority
+				</td>
+			</tr>
+			<tr>
+				<td></td><td>
+					<input type="checkbox" name="optAutomation" 
+				  			 />
+					Enable Test Automation (API keys)
+				</td>
+			</tr>
+			<tr>
+				<td></td><td>
+					<input type="checkbox" name="optInventory" 
+				  			 />
+					Enable Inventory
+				</td>
+			</tr>
+
+			<tr>
+				<td>Issue Tracker Integration</td><td></td>
+			</tr>
+			<tr>
+				<td></td>
+				<td>
+			    	<input type="checkbox" id="issue_tracker_enabled"
+			    		   name="issue_tracker_enabled"  />
+			    	Active
+			    </td>
+      		</tr>
+			<tr>
+				<td></td>
+				<td>
+			    	Issue Tracker
+			 		<select name="issue_tracker_id" id="issue_tracker_id">
+			 		<option value="0">&nbsp;</option>
+			 					 		</select>
+			    </td>
+      		</tr>
+
+			<tr>
+				<td>Availability</td><td></td>
+			</tr>
+			<tr>
+				<td></td><td>
+			    	<input type="checkbox" name="active"  checked="checked"  />
+			    	Active
+			    </td>
+      		</tr>
+
+			<tr>
+				<td></td><td>
+			    	<input type="checkbox" name="is_public"  checked="checked"	 />
+			    	Public
+			    </td>
+      		</tr>
+			<tr><td cols="2">
+		    				<div class="groupBtn">
+		    	    			<input type="hidden" name="doAction" value="doCreate" />
+				<input type="hidden" name="tprojectID" value="0" />
+			    <input type="submit" name="doActionButton" value="Create" />
+				<input type="button" name="go_back" value="Cancel" onclick="javascript:history.back();"/>
+				</div>
+						</td></tr>
+
+		</table>
+		</form>
+		<p>* Mandatory fields</p>
+	</div>
+	</div>
+</body>
+</html>

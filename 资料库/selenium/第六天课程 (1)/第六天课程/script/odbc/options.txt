@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Edwin\Desktop\第六天课程\script\odbc
+-ID:\Program Files\HP\LoadRunner\include
+-ec:\users\edwin\desktop\第六天课程\script\odbc\\logfile.log
+c:\users\edwin\desktop\第六天课程\script\odbc\\combined_odbc.c
+c:\users\edwin\desktop\第六天课程\script\odbc\\pre_cci.c

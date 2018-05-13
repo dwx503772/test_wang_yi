@@ -1,0 +1,13 @@
+[t54]
+FileName1=t54_fck_editor.css
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/fck_editor.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_54.xml
+RequestHeaderFile=t54_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t54_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

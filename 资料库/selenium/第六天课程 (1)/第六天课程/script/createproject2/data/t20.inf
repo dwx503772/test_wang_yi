@@ -1,0 +1,13 @@
+[t20]
+FileName1=t20_ListMenu.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/ListMenu.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_20.xml
+RequestHeaderFile=t20_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t20_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

@@ -1,0 +1,13 @@
+POST /testlink/login.php HTTP/1.1
+Accept: text/html, application/xhtml+xml, */*
+Referer: http://192.168.0.106/testlink/login.php
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Content-Type: application/x-www-form-urlencoded
+Accept-Encoding: gzip, deflate
+Host: 192.168.0.106
+Content-Length: 143
+Connection: Keep-Alive
+Cache-Control: no-cache
+Cookie: PHPSESSID=stnfiijs0aq2hva9c0g3r8ucc0
+

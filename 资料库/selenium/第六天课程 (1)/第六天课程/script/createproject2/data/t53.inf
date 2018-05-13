@@ -1,0 +1,13 @@
+[t53]
+FileName1=t53_tl_fckeditor_config.html
+URL1=http://192.168.0.106/testlink/cfg/tl_fckeditor_config.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_53.xml
+RequestHeaderFile=t53_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t53_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

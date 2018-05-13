@@ -1,0 +1,13 @@
+HTTP/1.1 200 OK
+Date: Sat, 13 Aug 2016 13:36:23 GMT
+Server: Apache/2.4.10 (Ubuntu)
+Last-Modified: Sat, 01 Sep 2012 13:55:30 GMT
+ETag: "190-4c8a442ef1880-gzip"
+Accept-Ranges: bytes
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 231
+Keep-Alive: timeout=5, max=99
+Connection: Keep-Alive
+Content-Type: text/css
+

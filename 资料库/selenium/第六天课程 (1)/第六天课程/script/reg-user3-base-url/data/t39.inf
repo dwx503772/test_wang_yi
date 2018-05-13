@@ -1,0 +1,13 @@
+[t39]
+FileName1=t39_ToolbarDroppable.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/ToolbarDroppable.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_39.xml
+RequestHeaderFile=t39_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t39_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

@@ -1,0 +1,13 @@
+[t13]
+FileName1=t13_favicon.html
+URL1=http://192.168.0.106/testlink/gui/themes/default/images/favicon.ico
+Total=1
+ContentType=image/vnd.microsoft.icon
+SnapshotXmlFile=snapshot_13.xml
+RequestHeaderFile=t13_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t13_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

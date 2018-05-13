@@ -1,0 +1,9 @@
+<?xml-stylesheet href="..\db_disconnection.xsl" type="text/xsl"?>
+<report vuGenInstallDir="D:\Program Files\HP\LoadRunner">
+  <database_validation>
+    <validation count="0" />
+    <source>db1</source>
+    <source_1>
+    </source_1>
+  </database_validation>
+</report>

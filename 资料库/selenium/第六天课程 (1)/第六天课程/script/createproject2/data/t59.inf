@@ -1,0 +1,13 @@
+[t59]
+FileName1=t59_fck_strip.gif
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/fck_strip.gif
+Total=1
+ContentType=image/gif
+SnapshotXmlFile=snapshot_59.xml
+RequestHeaderFile=t59_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t59_ResponseHeader.txt
+[AdditionalInfo]
+IsIgnorable=1
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,13 @@
+[t30]
+FileName1=t30_slide_gripper.gif
+URL1=http://192.168.0.106/testlink/gui/themes/default/images/slide_gripper.gif
+Total=1
+ContentType=image/gif
+SnapshotXmlFile=snapshot_30.xml
+RequestHeaderFile=t30_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t30_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

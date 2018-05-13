@@ -1,0 +1,230 @@
+Virtual User Script started at : 2016-08-17 23:34:46
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 9409 (Jan 11 2012 11:34:16)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\Edwin\Desktop\第六天课程\script\createproject2\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(6): Notify: Saving Parameter "ip = 192.168.0.106".
+Action.c(7): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(17): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(17): Notify: Saving Parameter "CorrelationParameter_1 = 2016081784b7eac0006c5cf4f38b1be045f70d946f8f5159".
+Action.c(17): web_url("login.php") was successful, 1467 body bytes, 502 header bytes  	[MsgId: MMSG-26386]
+Action.c(26): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(26): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(26): web_url("testlink.css") was successful, 6459 body bytes, 337 header bytes  	[MsgId: MMSG-26386]
+Action.c(34): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(34): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(34): web_url("tl_print.css") was successful, 442 body bytes, 335 header bytes  	[MsgId: MMSG-26386]
+Action.c(42): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(42): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(42): web_url("testlink_library.js") was successful, 9092 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(50): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(50): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(50): web_url("prototype.js") was successful, 16390 body bytes, 353 header bytes  	[MsgId: MMSG-26386]
+Action.c(58): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(58): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(58): web_url("niftycube.js") was successful, 3083 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(66): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(66): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(66): web_url("company_logo.png") was successful, 1929 body bytes, 285 header bytes  	[MsgId: MMSG-26386]
+Action.c(74): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(74): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(74): web_url("sorttable.js") was successful, 5233 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(82): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(82): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(82): web_url("test_automation.js") was successful, 1251 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(90): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(90): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(90): web_url("navbar.gif") was successful, 166 body bytes, 283 header bytes  	[MsgId: MMSG-26386]
+Action.c(98): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(98): web_url("favicon.ico") was successful, 766 body bytes, 299 header bytes  	[MsgId: MMSG-26386]
+Action.c(106): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(106): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(106): web_url("niftyCorners.css") was successful, 419 body bytes, 335 header bytes  	[MsgId: MMSG-26386]
+Action.c(114): lr_think_time: 2.00 seconds.
+Action.c(116): Notify: Transaction "login" started.
+Action.c(117): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(117): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(117): Notify: Parameter Substitution: parameter "CorrelationParameter_1" =  "2016081784b7eac0006c5cf4f38b1be045f70d946f8f5159"
+Action.c(117): Notify: Parameter Substitution: parameter "login" =  "test1"
+Action.c(117): Notify: Next row for parameter password = 1 [table  = password].
+Action.c(117): Notify: Parameter Substitution: parameter "password" =  "test1"
+Action.c(117): web_submit_data("login.php_2") was successful, 128 body bytes, 500 header bytes  	[MsgId: MMSG-26386]
+Action.c(133): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(133): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(133): web_url("index.php") was successful, 573 body bytes, 388 header bytes  	[MsgId: MMSG-26386]
+Action.c(142): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(142): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(142): web_url("navBar.php") was successful, 1668 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(151): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(151): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(151): web_url("magnifier.png") was successful, 615 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(159): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(159): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(159): web_url("mainPage.php") was successful, 2561 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(168): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(168): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(168): web_url("ext-all.css") was successful, 22363 body bytes, 339 header bytes  	[MsgId: MMSG-26386]
+Action.c(176): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(176): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(176): web_url("Exporter-all.js") was successful, 6611 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(184): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(184): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(184): web_url("ListMenu.js") was successful, 1805 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(192): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(192): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(192): web_url("GridFilters.js") was successful, 6487 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(200): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(200): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(200): web_url("Filter.js") was successful, 1767 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(208): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(208): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(208): web_url("StringFilter.js") was successful, 1366 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(216): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(216): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(216): web_url("ListFilter.js") was successful, 1849 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(224): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(224): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(224): web_url("NumericFilter.js") was successful, 1717 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(232): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(232): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(232): web_url("GridFilters.css") was successful, 483 body bytes, 335 header bytes  	[MsgId: MMSG-26386]
+Action.c(240): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(240): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(240): web_url("BooleanFilter.js") was successful, 1176 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(248): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(248): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(248): web_url("ext-lang-zh_CN.js") was successful, 2461 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(256): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(256): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(256): web_url("DateFilter.js") was successful, 2429 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(264): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(264): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(264): web_url("slide_gripper.gif") was successful, 127 body bytes, 283 header bytes  	[MsgId: MMSG-26386]
+Action.c(272): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(272): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(272): web_url("TableGrid.js") was successful, 1182 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(280): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(280): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(280): web_url("Reorderer.js") was successful, 2554 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(288): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(288): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(288): web_url("RangeMenu.css") was successful, 231 body bytes, 335 header bytes  	[MsgId: MMSG-26386]
+Action.c(296): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(296): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(296): web_url("ext-all.js") was successful, 198376 body bytes, 358 header bytes, 173 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(304): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(304): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(304): web_url("ext-base.js") was successful, 10539 body bytes, 352 header bytes  	[MsgId: MMSG-26386]
+Action.c(312): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(312): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(312): web_url("ToolbarReorderer.js") was successful, 2164 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(320): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(320): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(320): web_url("ToolbarDroppable.js") was successful, 1681 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(328): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(328): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(328): web_url("RangeMenu.js") was successful, 1244 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(336): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(336): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(336): web_url("white-top-bottom.gif") was successful, 842 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(344): Notify: Transaction "login" ended with "Pass" status (Duration: 1.9696 Wasted Time: 0.2035).
+Action.c(346): lr_think_time: 6.00 seconds.
+Action.c(348): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(348): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(348): web_url("测试项目管理") was successful, 2563 body bytes, 390 header bytes  	[MsgId: MMSG-26386]
+Action.c(357): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(357): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(357): web_url("brick.png") was successful, 452 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(365): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(365): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(365): web_url("sort_hint.png") was successful, 349 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(373): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(373): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(373): web_url("apply_f2_16.png") was successful, 759 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(381): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(381): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(381): web_url("trash.png") was successful, 519 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(391): Notify: Transaction "createproject" started.
+Action.c(393): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(403): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(403): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(403): Notify: Saving Parameter "CorrelationParameter_2 = 201608172801380d240be355be2b6b0dfd549f8ade71e080".
+Action.c(403): web_submit_data("projectEdit.php") was successful, 3206 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(414): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(414): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(414): web_url("validate.js") was successful, 1859 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(422): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(422): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(422): web_url("cfield_validation.js") was successful, 1544 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(430): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(430): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(430): web_url("error.gif") was successful, 320 body bytes, 284 header bytes  	[MsgId: MMSG-26386]
+Action.c(438): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(438): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(438): web_url("fckeditor.html") was successful, 4252 body bytes, 338 header bytes  	[MsgId: MMSG-26386]
+Action.c(447): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(447): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(447): web_url("spacer.gif") was successful, 43 body bytes, 282 header bytes  	[MsgId: MMSG-26386]
+Action.c(455): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(455): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(455): web_url("fckconfig.js") was successful, 4612 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(463): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(463): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(463): web_url("fckeditorcode_ie.js") was successful, 68447 body bytes, 358 header bytes, 61 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(471): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(471): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(471): web_url("tl_fckeditor_config.js") was successful, 1070 body bytes, 350 header bytes  	[MsgId: MMSG-26386]
+Action.c(479): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(479): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(479): web_url("fck_editor.css") was successful, 1956 body bytes, 337 header bytes  	[MsgId: MMSG-26386]
+Action.c(487): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(487): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(487): web_url("zh-cn.js") was successful, 6379 body bytes, 351 header bytes  	[MsgId: MMSG-26386]
+Action.c(495): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(495): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(495): web_url("toolbar.expand.gif") was successful, 152 body bytes, 283 header bytes  	[MsgId: MMSG-26386]
+Action.c(503): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(503): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(503): web_url("toolbar.collapse.gif") was successful, 152 body bytes, 283 header bytes  	[MsgId: MMSG-26386]
+Action.c(511): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(511): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(511): web_url("toolbar.start.gif") was successful, 105 body bytes, 283 header bytes  	[MsgId: MMSG-26386]
+Action.c(519): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(519): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(519): web_url("fck_strip.gif") was successful, 5175 body bytes, 286 header bytes  	[MsgId: MMSG-26386]
+Action.c(527): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(527): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(527): web_url("toolbar.buttonarrow.gif") was successful, 46 body bytes, 282 header bytes  	[MsgId: MMSG-26386]
+Action.c(535): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(535): web_url("fck_editorarea.css") was successful, 1185 body bytes, 336 header bytes  	[MsgId: MMSG-26386]
+Action.c(543): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(543): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(543): web_url("fckstyles.xml") was successful, 1088 body bytes, 343 header bytes  	[MsgId: MMSG-26386]
+Action.c(551): lr_think_time: 3.00 seconds.
+Action.c(555): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(555): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(555): Notify: Parameter Substitution: parameter "CorrelationParameter_2" =  "201608172801380d240be355be2b6b0dfd549f8ade71e080"
+Action.c(555): Notify: Parameter Substitution: parameter "project" =  "testproject1"
+Action.c(555): Notify: Next row for parameter caseprefix = 1 [table  = caseprefix].
+Action.c(555): Notify: Parameter Substitution: parameter "caseprefix" =  "testproject1"
+Action.c(555): web_submit_data("projectEdit.php_2") was successful, 2703 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(576): Notify: Parameter Substitution: parameter "project" =  "testproject1"
+Action.c(576): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(579): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(579): Notify: Parameter Substitution: parameter "ip" =  "192.168.0.106"
+Action.c(579): Registered web_reg_find successful for "Text=testproject1" (count=2)  	[MsgId: MMSG-26364]
+Action.c(579): Notify: Saving Parameter "projectCheck = 2".
+Action.c(579): web_url("navBar.php_2") was successful, 1688 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(587): Notify: Parameter Substitution: parameter "projectCheck" =  "2"
+Action.c(588): Notify: Transaction "createproject" ended with "Pass" status (Duration: 5.1666 Think Time: 3.0008 Wasted Time: 0.1195).
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Vuser 0 (thread 3484), ended OK."

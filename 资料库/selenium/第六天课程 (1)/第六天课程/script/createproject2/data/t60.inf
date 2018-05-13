@@ -1,0 +1,13 @@
+[t60]
+FileName1=t60_toolbar.buttonarrow.gif
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.buttonarrow.gif
+Total=1
+ContentType=image/gif
+SnapshotXmlFile=snapshot_60.xml
+RequestHeaderFile=t60_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t60_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

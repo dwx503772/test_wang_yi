@@ -1,0 +1,40 @@
+Error:  Failed to open c:\users\edwin\appdata\local\temp\noname3\data\noname3.ibf
+
+WebServices notify: version 2 (11.0.9409.0)
+DFE - NOTIFY: Init: Extension "Base64 Extension" loaded successfully with global settings "Base64Dfe.ini".
+DFE - NOTIFY: Init: Extension "GWT Extension" loaded successfully with global settings "GWTSettings.xml".
+DFE - NOTIFY: Init: Extension "HttpHeaders Extension" loaded successfully with global settings "HttpHeadersMap.ini".
+DFE - NOTIFY: Init: Extension "Json to Xml Extension" loaded successfully with global settings "".
+DFE - NOTIFY: Extension: Prefix/Postfix DFE
+Successfully initialized extension from settings file: "PrefixPostfixSettings.ini"
+Prefix: ""
+Postfix: ""
+CaseSensitive: true
+
+
+DFE - NOTIFY: Init: Extension "Prefix Postfix Extension" loaded successfully with global settings "PrefixPostfixSettings.ini".
+DFE - NOTIFY: Init: Extension "UrlEncoding Extension" loaded successfully with global settings "".
+DFE - NOTIFY: Init: Extension "Xml Extension" loaded successfully with global settings "XmlDfe.ini".
+DFE - NOTIFY: Init: All configuration loaded successfully.
+DFE - NOTIFY: The DFE code generation settings are empty (no chains specified) - the DFE is disabled.
+****** Start Log Message ******
+Web Recorder version : 11.0.9409.0 
+Recording Mode: HTML-based script
+Recording headers in list:
+	accept-charset
+	accept-encoding
+	accept-language
+	soapaction
+	user-agent
+Not excluding content types
+Do not record this content types as a resource:
+	text/html
+	text/xml
+Reset context between actions
+Record non-HTML elements in current HTML function
+Protocol Type: Multi-WS_SOAP
+
+$$$$$$ End Log Message $$$$$$
+
+Code generation version: 11.0.9409.0
+

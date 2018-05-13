@@ -1,0 +1,10 @@
+GET /testlink/lib/general/mainPage.php HTTP/1.1
+Referer: http://192.168.0.106/testlink/index.php
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Accept: */*
+Connection: Keep-Alive
+Host: 192.168.0.106
+Cookie: PHPSESSID=fa7hd303b5bsl7pdc83do9lea7
+

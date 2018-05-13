@@ -1,0 +1,54 @@
+Virtual User Script started at : 2016-08-16 23:35:06
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 9409 (Jan 11 2012 11:34:16)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\Edwin\Desktop\µÚÁùÌì¿Î³Ì\script\createproject\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(7): Found resource "http://192.168.0.106/testlink/gui/javascript/testlink_library.js" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Found resource "http://192.168.0.106/testlink/gui/javascript/test_automation.js" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Found resource "http://192.168.0.106/testlink/third_party/prototype/prototype.js" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Found resource "http://192.168.0.106/testlink/gui/javascript/sorttable.js" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Found resource "http://192.168.0.106/testlink/gui/niftycube/niftycube.js" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Found resource "http://192.168.0.106/testlink/gui/themes/default/images/company_logo.png" in HTML "http://192.168.0.106/testlink/login.php"  	[MsgId: MMSG-26659]
+Action.c(7): Downloading resource "http://192.168.0.106/testlink/gui/themes/default/css/testlink.css" (specified by argument number 10)  	[MsgId: MMSG-26577]
+Action.c(7): Downloading resource "http://192.168.0.106/testlink/gui/themes/default/css/tl_print.css" (specified by argument number 12)  	[MsgId: MMSG-26577]
+Action.c(7): Downloading resource "http://192.168.0.106/testlink/gui/themes/default/images/navbar.gif" (specified by argument number 14)  	[MsgId: MMSG-26577]
+Action.c(7): Downloading resource "http://192.168.0.106/testlink/gui/niftycube/niftyCorners.css" (specified by argument number 16)  	[MsgId: MMSG-26577]
+Action.c(7): web_url("login.php") was successful, 45930 body bytes, 3834 header bytes  	[MsgId: MMSG-26386]
+Action.c(21): Registering web_reg_save_param_ex was successful  	[MsgId: MMSG-26390]
+Action.c(31): Resource "http://192.168.0.106/testlink/gui/javascript/testlink_library.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): Resource "http://192.168.0.106/testlink/gui/javascript/test_automation.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): Resource "http://192.168.0.106/testlink/third_party/prototype/prototype.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): Resource "http://192.168.0.106/testlink/gui/javascript/sorttable.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): Resource "http://192.168.0.106/testlink/gui/niftycube/niftycube.js" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): Resource "http://192.168.0.106/testlink/gui/themes/default/images/company_logo.png" is in the cache already and will not be downloaded again  	[MsgId: MMSG-26655]
+Action.c(31): web_submit_data("login.php_2") was successful, 1469 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(48): web_url("index.php") was successful, 128 body bytes, 388 header bytes  	[MsgId: MMSG-26386]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/css/fck_editorarea.css" (specified by argument number 40)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/fckconfig.js" (specified by argument number 10)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/js/fckeditorcode_ie.js" (specified by argument number 13)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/cfg/tl_fckeditor_config.js" (specified by argument number 16)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/fck_editor.css" (specified by argument number 19)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/lang/zh-cn.js" (specified by argument number 22)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.expand.gif" (specified by argument number 25)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.collapse.gif" (specified by argument number 28)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.buttonarrow.gif" (specified by argument number 31)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.start.gif" (specified by argument number 34)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/fck_strip.gif" (specified by argument number 37)  	[MsgId: MMSG-26577]
+Action.c(58): Downloading resource "http://192.168.0.106/testlink/third_party/fckeditor/fckstyles.xml" (specified by argument number 43)  	[MsgId: MMSG-26577]
+Action.c(58): web_url("projectEdit.php") was successful, 90535 body bytes, 4231 header bytes, 61 chunking overhead bytes  	[MsgId: MMSG-26385]
+Action.c(83): Downloading resource "http://192.168.0.106/testlink/gui/themes/default/images/white-top-bottom.gif" (specified by argument number 41)  	[MsgId: MMSG-26577]
+Action.c(83): web_submit_data("projectEdit.php_2") was successful, 995 body bytes, 672 header bytes  	[MsgId: MMSG-26386]
+Action.c(106): Registering web_reg_find was successful  	[MsgId: MMSG-26390]
+Action.c(109): Error -26366: "Text=testproject1" not found for web_reg_find  	[MsgId: MERR-26366]
+Action.c(109): web_url("navBar.php") highest severity level was "ERROR", 154 body bytes, 388 header bytes  	[MsgId: MMSG-26388]
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

@@ -1,0 +1,13 @@
+[t9]
+FileName1=t9_test_automation.html
+URL1=http://192.168.0.106/testlink/gui/javascript/test_automation.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_9.xml
+RequestHeaderFile=t9_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t9_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

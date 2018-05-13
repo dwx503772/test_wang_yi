@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Edwin\Desktop\第六天课程\script\reg-user3-base-url
+-ID:\Program Files\HP\LoadRunner\include
+-ec:\users\edwin\desktop\第六天课程\script\reg-user3-base-url\\logfile.log
+c:\users\edwin\desktop\第六天课程\script\reg-user3-base-url\\combined_reg-user3-base-url.c
+c:\users\edwin\desktop\第六天课程\script\reg-user3-base-url\\pre_cci.c

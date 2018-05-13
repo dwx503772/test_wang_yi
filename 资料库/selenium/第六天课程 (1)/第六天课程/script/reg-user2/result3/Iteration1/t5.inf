@@ -1,0 +1,12 @@
+[t5]
+SnapshotXmlFile=snapshot_5.xml
+ContentType=application/xml
+StepName=Url: IE9CompatViewList.xml
+Total=1
+FileName1=t5.xml
+RequestHeaderFile=t5_RequestHeader.txt
+ResponseHeaderFile=t5_ResponseHeader.txt
+RequestBodyFile=t5_RequestBody.txt
+URL1=http://ie9cvlist.ie.microsoft.com/IE9CompatViewList.xml
+[AdditionalInfo]
+IsIgnorable=1

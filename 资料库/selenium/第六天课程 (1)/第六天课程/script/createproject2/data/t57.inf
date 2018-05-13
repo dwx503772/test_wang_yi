@@ -1,0 +1,13 @@
+[t57]
+FileName1=t57_toolbar.collapse.gif
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/skins/default/images/toolbar.collapse.gif
+Total=1
+ContentType=image/gif
+SnapshotXmlFile=snapshot_57.xml
+RequestHeaderFile=t57_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t57_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

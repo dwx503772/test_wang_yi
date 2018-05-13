@@ -1,0 +1,13 @@
+[t5]
+FileName1=t5_IE9CompatViewList.xml
+URL1=http://ie9cvlist.ie.microsoft.com/IE9CompatViewList.xml
+Total=1
+ContentType=text/xml
+SnapshotXmlFile=snapshot_5.xml
+RequestHeaderFile=t5_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t5_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

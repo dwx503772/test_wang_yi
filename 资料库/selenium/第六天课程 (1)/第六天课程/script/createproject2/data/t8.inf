@@ -1,0 +1,13 @@
+[t8]
+FileName1=t8_sorttable.html
+URL1=http://192.168.0.106/testlink/gui/javascript/sorttable.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_8.xml
+RequestHeaderFile=t8_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t8_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

@@ -1,0 +1,10 @@
+GET /testlink/third_party/ext-js/ux/Exporter-all.js HTTP/1.1
+Accept: application/javascript, */*;q=0.8
+Referer: http://192.168.0.106/testlink/lib/general/mainPage.php
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Host: 192.168.0.106
+Connection: Keep-Alive
+Cookie: PHPSESSID=7nt7kq7jgkn48vibfldid4ft32; TESTLINK_USER_AUTH_COOKIE=4c0bd8a4a2d848f1476cc4568ef9e7b27a3c3d0c240ae57a6ac758dad9637ce9
+

@@ -1,0 +1,10 @@
+GET /testlink/lib/general/navBar.php HTTP/1.1
+Referer: http://192.168.0.106/testlink/lib/project/projectEdit.php
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN
+Accept: */*
+Connection: Keep-Alive
+Host: 192.168.0.106
+Cookie: PHPSESSID=61mjjg7thrmia0kip23sq9rff3; TESTLINK_USER_AUTH_COOKIE=647f966a9003436a220f0a8161f0f451c26dbce3d2a9185a0d4cc1cc2b79f87d
+

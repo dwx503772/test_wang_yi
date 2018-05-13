@@ -1,0 +1,13 @@
+[t30]
+FileName1=t30_BooleanFilter.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/BooleanFilter.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_30.xml
+RequestHeaderFile=t30_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t30_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

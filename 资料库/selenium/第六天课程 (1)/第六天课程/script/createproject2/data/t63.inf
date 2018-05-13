@@ -1,0 +1,13 @@
+[t63]
+FileName1=t63.htm
+URL1=http://192.168.0.106/testlink/lib/project/projectEdit.php
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_63.xml
+RequestHeaderFile=t63_RequestHeader.txt
+RequestBodyFile=t63_RequestBody.txt
+ResponseHeaderFile=t63_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

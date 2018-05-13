@@ -1,0 +1,19 @@
+Virtual User Script started at : 2016-08-13 22:26:56
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 9409 (Jan 11 2012 11:34:16)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\Edwin\Desktop\µÚÁùÌì¿Î³Ì\script\reg-user2\\default.cfg"  	[MsgId: MMSG-27141]
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(3): Notify: Saving Parameter "ip = 192.168.0.106".
+Action.c(4): web_set_max_html_param_len was successful  	[MsgId: MMSG-26392]
+Action.c(6): Error: C interpreter run time error: Action.c (6):  Error -- Unresolved symbol : lr_db_connect.
+Action.c(6): Notify: CCI trace: Compiled_code(0): Action()
+.
+Action was aborted.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

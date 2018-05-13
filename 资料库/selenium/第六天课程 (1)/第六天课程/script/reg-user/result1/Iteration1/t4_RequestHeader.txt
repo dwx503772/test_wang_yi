@@ -1,0 +1,10 @@
+GET /testlink/login.php?note=first HTTP/1.1
+Referer: http://192.168.0.106/testlink/firstLogin.php
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN
+Accept: */*
+Connection: Keep-Alive
+Host: 192.168.0.106
+Cookie: PHPSESSID=05ikj4a8v242n1aua47v7n4ug1
+

@@ -1,0 +1,286 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en" />
+	<meta http-equiv="expires" content="-1" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="author" content="Martin Havlat" />
+	<meta name="copyright" content="GNU" />
+	<meta name="robots" content="NOFOLLOW" />
+	<base href="http://192.168.0.106/testlink/"/>
+	<title>TestLink</title>
+	<link rel="icon" href="http://192.168.0.106/testlink/gui/themes/default/images/favicon.ico" type="image/x-icon" />
+	
+ 
+	<style media="all" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/testlink.css";</style>
+
+		
+	  
+	<style media="print" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/tl_print.css";</style>
+
+ 
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/testlink_library.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/test_automation.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/third_party/prototype/prototype.js" language="javascript"></script>
+	   
+	
+		<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/sorttable.js" 
+		language="javascript"></script>
+	
+	<script type="text/javascript" language="javascript">
+	<!--
+	var fRoot = 'http://192.168.0.106/testlink/';
+	var menuUrl = '';
+	var args  = '';
+	var additionalArgs  = '';
+	
+	// To solve problem diplaying help
+	var SP_html_help_file  = '';
+	
+	//attachment related JS-Stuff
+	var attachmentDlg_refWindow = null;
+	var attachmentDlg_refLocation = null;
+	var attachmentDlg_bNoRefresh = false;
+	
+	// bug management (using logic similar to attachment)
+	var bug_dialog = new bug_dialog();
+
+	// for ext js
+	var extjsLocation = 'third_party/ext-js';
+	
+	//-->
+	</script> 
+
+
+
+  
+
+
+        <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/css/ext-all.css" />
+  <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/GridFilters.css" />
+  <link rel="stylesheet" type="text/css" href="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/RangeMenu.css" />
+  
+              <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/adapter/ext/ext-base.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ext-all.js" language="javascript"></script>
+      
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/Reorderer.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/ToolbarReorderer.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/ToolbarDroppable.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/Exporter-all.js" language="javascript"></script>
+      
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/RangeMenu.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/ListMenu.js" language="javascript"></script>
+      
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/GridFilters.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/Filter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/StringFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/DateFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/ListFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/NumericFilter.js" language="javascript"></script>
+      <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/BooleanFilter.js" language="javascript"></script>
+      
+      
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/src/locale/ext-lang-en_GB.js" language="javascript"></script>
+  
+            <script type="text/javascript" src="http://192.168.0.106/testlink/third_party/ext-js/ux/TableGrid.js" language="javascript"></script>
+  
+
+<script language="JavaScript" src="http://192.168.0.106/testlink/gui/niftycube/niftycube.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+window.onload=function()
+{
+    // Nifty("div.menu_bubble");
+    if( typeof display_left_block_1 != 'undefined')
+    {
+        display_left_block_1();
+    }
+
+    if( typeof display_left_block_2 != 'undefined')
+    {
+        display_left_block_2();
+    }
+
+    if( typeof display_left_block_3 != 'undefined')
+    {
+        display_left_block_3();
+    }
+    
+    if( typeof display_left_block_4 != 'undefined')
+    {
+        display_left_block_4();
+    }
+
+    display_left_block_5();
+
+    if( typeof display_right_block_1 != 'undefined')
+    {
+        display_right_block_1();
+    }
+
+    if( typeof display_right_block_2 != 'undefined')
+    {
+        display_right_block_2();
+    }
+
+    if( typeof display_right_block_3 != 'undefined')
+    {
+        display_right_block_3();
+    }
+   
+}
+</script>
+
+</head>
+
+<body>
+
+
+
+
+
+
+
+
+<div class="vertical_menu" style="float: right; margin:10px 10px 10px 10px">
+		<br />
+
+  <div id='menu_right_block_1'></div><br />
+  <div id='menu_right_block_2'></div><br />
+  <div id="menu_right_block_3"></div><br />
+  
+  	  
+		  
+  	  
+</div>
+
+
+    
+    <script  type="text/javascript">
+    
+    function display_left_block_1()
+    {
+        var p1 = new Ext.Panel({
+                                title: 'Test Project',
+                                collapsible:false,
+                                collapsed: false,
+                                draggable: false,
+                                contentEl: 'testproject_topics',
+                                baseCls: 'x-tl-panel',
+                                bodyStyle: "background:#c8dce8;padding:3px;",
+                                renderTo: 'menu_left_block_1',
+                                width:'100%'
+                                });
+     }
+    
+    </script>
+
+
+
+
+    
+    <script type="text/javascript">
+    
+    function display_left_block_4()
+    {
+        var p4 = new Ext.Panel({
+                                title: 'Test Specification',
+                                collapsible:false,
+                                collapsed: false,
+                                draggable: false,
+                                contentEl: 'testspecification_topics',
+                                baseCls: 'x-tl-panel',
+                                bodyStyle: "background:#c8dce8;padding:3px;",
+                                renderTo: 'menu_left_block_4',
+                                width:'100%'
+                                });
+     }
+    
+    </script>
+
+    <script type="text/javascript">
+    
+    function display_left_block_5()
+    {
+        var p5 = new Ext.Panel({
+                                title: 'Documentation',
+                                collapsible:false,
+                                collapsed: false,
+                                draggable: false,
+                                contentEl: 'testlink_application',
+                                baseCls: 'x-tl-panel',
+                                bodyStyle: "background:#c8dce8;padding:3px;",
+                                renderTo: 'menu_left_block_5',
+                                width:'100%'
+                                });
+	}
+    
+    </script>
+
+<div class="vertical_menu" style="float: left">
+    <div id='menu_left_block_1'></div><br />
+  <div id='menu_left_block_2'></div><br />
+  <div id="menu_left_block_3"></div><br />
+  <div id="menu_left_block_4"></div><br />
+  <div id="menu_left_block_5"></div><br />
+  
+	    <div id='testproject_topics'>
+	  
+        
+	  
+      	  
+	  	  			<br />
+	  		<img src="gui/themes/default/images/slide_gripper.gif" />
+	        <a href="lib/keywords/keywordsView.php">Keyword Management</a>
+	   	  
+ 				
+ 				
+
+			  
+    </div>
+	  
+
+  	  
+
+   	  
+
+   	      <div id="testspecification_topics" >
+  		<img src="gui/themes/default/images/slide_gripper.gif" />
+  		<a href="lib/general/frmWorkArea.php?feature=editTc">
+    		  	      Browse Test Cases
+  	     	  </a>
+          
+  		
+	  	  	    	    		
+  	 
+	  
+    </div>
+  
+    <div id='testlink_application'>
+  		<img src="gui/themes/default/images/slide_gripper.gif" />
+		<form style="display:inline;">
+    	<select class="menu_combo" style="font-weight:normal;" name="docs" size="1"
+            	onchange="javascript:get_docs(this.form.docs.options[this.form.docs.selectedIndex].value, 
+            	'http://192.168.0.106/testlink/');" >
+        	<option value="leer"> -Choose Document-</option>
+        	                            <option value="Configuration_of_FCKEditor_and_CKFinder.pdf">Configuration_of_FCKEditor_and_CKFinder.pdf</option>
+                            <option value="customfields_for_computing_times.txt">customfields_for_computing_times.txt</option>
+                            <option value="excel2TestLink.pdf">excel2TestLink.pdf</option>
+                            <option value="glosary.html">glosary.html</option>
+                            <option value="remote_execution_quick_start.txt">remote_execution_quick_start.txt</option>
+                            <option value="samples.txt">samples.txt</option>
+                            <option value="testlink_installation_manual.pdf">testlink_installation_manual.pdf</option>
+                            <option value="testlink_user_manual.pdf">testlink_user_manual.pdf</option>
+                            <option value="tl-bts-howto.pdf">tl-bts-howto.pdf</option>
+                            <option value="tl-file-formats.pdf">tl-file-formats.pdf</option>
+                            <option value="youtrack-readme.pdf">youtrack-readme.pdf</option>
+                    	    	</select>
+		</form>
+    </div>
+
+
+</div></body>
+</html>

@@ -1,0 +1,13 @@
+[t32]
+FileName1=t32_ext-lang-en_GB.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/src/locale/ext-lang-en_GB.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_32.xml
+RequestHeaderFile=t32_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t32_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

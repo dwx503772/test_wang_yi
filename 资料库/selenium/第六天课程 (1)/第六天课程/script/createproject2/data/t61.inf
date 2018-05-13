@@ -1,0 +1,13 @@
+[t61]
+FileName1=t61_fck_editorarea.css
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/css/fck_editorarea.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_61.xml
+RequestHeaderFile=t61_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t61_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

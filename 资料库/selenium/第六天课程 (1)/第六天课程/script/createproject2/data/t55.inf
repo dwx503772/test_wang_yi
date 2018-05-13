@@ -1,0 +1,13 @@
+[t55]
+FileName1=t55_zh-cn.html
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/lang/zh-cn.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_55.xml
+RequestHeaderFile=t55_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t55_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

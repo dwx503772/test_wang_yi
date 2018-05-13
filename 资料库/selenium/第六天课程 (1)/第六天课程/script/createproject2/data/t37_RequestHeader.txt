@@ -1,0 +1,10 @@
+GET /testlink/third_party/ext-js/ux/ToolbarDroppable.js HTTP/1.1
+Accept: application/javascript, */*;q=0.8
+Referer: http://192.168.0.106/testlink/lib/general/mainPage.php
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Host: 192.168.0.106
+Connection: Keep-Alive
+Cookie: PHPSESSID=65403iu2ll9g7gckmtbv5i5557; TESTLINK_USER_AUTH_COOKIE=5da683bb8f004dd3820007990da42cbff246bd56ff4defd4bcebe77b5c12d63e
+

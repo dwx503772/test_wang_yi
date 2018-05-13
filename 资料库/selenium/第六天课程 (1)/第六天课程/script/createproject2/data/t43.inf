@@ -1,0 +1,13 @@
+[t43]
+FileName1=t43_apply_f2_16.png
+URL1=http://192.168.0.106/testlink/gui/themes/default/images/apply_f2_16.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_43.xml
+RequestHeaderFile=t43_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t43_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

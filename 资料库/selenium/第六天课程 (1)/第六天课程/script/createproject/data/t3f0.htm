@@ -1,0 +1,90 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+     "DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="Content-language" content="en" />
+	<meta http-equiv="expires" content="-1" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<meta name="author" content="Martin Havlat" />
+	<meta name="copyright" content="GNU" />
+	<meta name="robots" content="NOFOLLOW" />
+	<base href="http://192.168.0.106/testlink/"/>
+	<title>TestLink</title>
+	<link rel="icon" href="http://192.168.0.106/testlink/gui/themes/default/images/favicon.ico" type="image/x-icon" />
+	
+ 
+	<style media="all" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/testlink.css";</style>
+
+		
+	  
+	<style media="print" type="text/css">@import "http://192.168.0.106/testlink/gui/themes/default/css/tl_print.css";</style>
+
+ 
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/testlink_library.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/test_automation.js" language="javascript"></script>
+	<script type="text/javascript" src="http://192.168.0.106/testlink/third_party/prototype/prototype.js" language="javascript"></script>
+	   
+	
+		<script type="text/javascript" src="http://192.168.0.106/testlink/gui/javascript/sorttable.js" 
+		language="javascript"></script>
+	
+	<script type="text/javascript" language="javascript">
+	<!--
+	var fRoot = 'http://192.168.0.106/testlink/';
+	var menuUrl = '';
+	var args  = '';
+	var additionalArgs  = '';
+	
+	// To solve problem diplaying help
+	var SP_html_help_file  = '';
+	
+	//attachment related JS-Stuff
+	var attachmentDlg_refWindow = null;
+	var attachmentDlg_refLocation = null;
+	var attachmentDlg_bNoRefresh = false;
+	
+	// bug management (using logic similar to attachment)
+	var bug_dialog = new bug_dialog();
+
+	// for ext js
+	var extjsLocation = 'third_party/ext-js';
+	
+	//-->
+	</script> 
+</head>
+<body style="min-width: 800px;">
+<div style="float:left; height: 100%;">
+	<a href="index.php" target="_parent">
+	<img alt="Company logo"	title="logo" style="width: 115px; height: 53px;" 
+	src="gui/themes/default/images/company_logo.png" /></a>
+</div>
+	
+<div class="menu_title">
+
+	<span class="bold">TestLink 1.9.4 (Prague - Speedy) : admin [admin]</span>
+		<span>[ <a href='lib/usermanagement/userInfo.php' target="mainframe" accesskey="i"
+      		tabindex="6">个人帐号</a>
+	 | 	<a href="logout.php" target="_parent" accesskey="q">注销</a> ]
+	</span>
+
+</div>
+
+<div class="menu_bar" style="margin: 0px 5px 0px 135px;">
+	<div style="display: inline; float: right;">
+		<form style="display:inline" name="productForm" action="lib/general/navBar.php" method="get">
+			 测试产品
+			<select style="font-size: 80%;position:relative; top:-1px;" name="testproject" onchange="this.form.submit();">
+	      				</select>
+		</form>
+	</div>
+
+
+</div>
+
+
+</body>
+</html>

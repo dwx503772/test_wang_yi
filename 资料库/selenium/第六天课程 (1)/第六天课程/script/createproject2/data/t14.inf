@@ -1,0 +1,13 @@
+[t14]
+FileName1=t14.htm
+URL1=http://192.168.0.106/testlink/index.php
+Total=1
+RequestHeaderFile=t14_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t14_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_14.xml
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=0

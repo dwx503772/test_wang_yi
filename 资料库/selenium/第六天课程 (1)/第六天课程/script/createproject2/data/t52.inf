@@ -1,0 +1,13 @@
+[t52]
+FileName1=t52_fckeditorcode_ie.html
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/editor/js/fckeditorcode_ie.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_52.xml
+RequestHeaderFile=t52_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t52_ResponseHeader.txt
+[AdditionalInfo]
+IsIgnorable=1
+[ProtocolInfo]
+ProtocolId=QTWeb

@@ -1,0 +1,12 @@
+<?xml-stylesheet href="..\db_executesql.xsl" type="text/xsl"?>
+<report vuGenInstallDir="D:\Program Files\HP\LoadRunner">
+  <database_validation>
+    <validation count="0" />
+    <source>db1</source>
+    <source_1>MyDataset</source_1>
+    <source_2>SELECT * FROM testlink.users where login='test1';</source_2>
+    <source_3>0</source_3>
+    <source_4>
+    </source_4>
+  </database_validation>
+</report>

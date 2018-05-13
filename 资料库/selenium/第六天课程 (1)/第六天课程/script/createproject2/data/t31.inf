@@ -1,0 +1,13 @@
+[t31]
+FileName1=t31_TableGrid.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/TableGrid.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_31.xml
+RequestHeaderFile=t31_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t31_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

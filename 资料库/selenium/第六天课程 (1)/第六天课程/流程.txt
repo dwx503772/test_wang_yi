@@ -1,0 +1,30 @@
+1.正常录制脚本
+2.参数化IP地址
+3.回放
+4.修改配置文件
+/var/www/html/testlink/
+5.发现邮箱问题，需要安装邮箱
+	5.1邮箱安装方法 
+	sudo apt-get install postfix 
+	apt-get install sharutils      
+	apt-get install mailutils
+
+	5.2邮箱设置方法
+	dpkg-reconfigure postfix
+	vi /etc/postfix/main.cf
+	mynetworks = 192.168.0.100/110,127.0.0.1/100
+	mailbox_size_limit = 10
+6.NDS设置
+	/etc/resolv.conf
+6.testlink参数配置
+	6.1con
+	$g_smtp_host        = 'Edwin-Salve.com';  # SMTP server MUST BE configured
+	# Configure using custom_config.inc.php
+	$g_tl_admin_email     = 'edwin@Edwin-Salve.com'; # for problem/error notification
+	$g_from_email         = 'edwin@Edwin-Salve.com';  # email sender
+	$g_return_path_email  = 'edwin@Edwin-Salve.com'
+	$g_phpMailer_method = SMTP_SEND;
+
+7.windows
+	hosts设置
+	                            

@@ -1,0 +1,12 @@
+[t5]
+SnapshotXmlFile=snapshot_5.xml
+ContentType=text/html
+StepName=Submit Data: projectEdit.php_2
+Total=1
+FileName1=t5.html
+RequestHeaderFile=t5_RequestHeader.txt
+ResponseHeaderFile=t5_ResponseHeader.txt
+RequestBodyFile=t5_RequestBody.txt
+URL1=http://192.168.0.106/testlink/lib/project/projectEdit.php
+[AdditionalInfo]
+IsIgnorable=1

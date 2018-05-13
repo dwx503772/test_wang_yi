@@ -1,0 +1,9 @@
+-+
+-DCCI
+-D_IDA_XL
+-DWINNT
+-IC:\Users\Edwin\Desktop\第六天课程\script\createproject
+-ID:\Program Files\HP\LoadRunner\include
+-ec:\users\edwin\desktop\第六天课程\script\createproject\\logfile.log
+c:\users\edwin\desktop\第六天课程\script\createproject\\combined_createproject.c
+c:\users\edwin\desktop\第六天课程\script\createproject\\pre_cci.c

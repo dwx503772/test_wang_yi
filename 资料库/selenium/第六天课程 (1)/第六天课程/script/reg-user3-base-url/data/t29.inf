@@ -1,0 +1,13 @@
+[t29]
+FileName1=t29_ListFilter.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/ListFilter.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_29.xml
+RequestHeaderFile=t29_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t29_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

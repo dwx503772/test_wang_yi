@@ -1,0 +1,77 @@
+[General]
+Type=Multi
+AdditionalTypes=QTWeb
+ActiveTypes=QTWeb
+GenerateTypes=QTWeb
+RecordedProtocols=QTWeb
+DefaultCfg=default.cfg
+AppName=
+BuildTarget=
+ParamRightBrace=}
+ParamLeftBrace={
+NewFunctionHeader=1
+LastActiveAction=Action
+CorrInfoReportDir=result6
+LastResultDir=result6
+DevelopTool=Vugen
+ActionLogicExt=action_logic
+MajorVersion=11
+MinorVersion=0
+ParameterFile=reg-user2.prm
+GlobalParameterFile=
+RunType=cci
+LastModifyVer=11.0.0.0
+ScriptExitOK=0
+[TransactionsOrder]
+Order="SQL"
+[Actions]
+vuser_init=vuser_init.c
+Action=Action.c
+vuser_end=vuser_end.c
+[AutoRecovery]
+vuser_init.c=vuac_usr42
+Action.c=vuac_usr43
+vuser_end.c=vuac_usr44
+globals.h=vuac_usr41
+[ProtocolsVersion]
+QTWeb=11.0.0.0
+[RunLogicFiles]
+Default Profile=default.usp
+[StateManagement]
+1=1
+7=0
+8=1
+9=0
+10=0
+11=0
+12=0
+13=0
+17=0
+18=0
+20=0
+21=0
+CurrentState=8
+VuserStateHistory= 0 65536 65552 1048576 1048592
+LastReplayStatus=2
+LastReplayErrorID1=-19890
+LastReplayErrorMsg1=Action.c(6): Error: C interpreter run time error: Action.c (6):  Error -- Unresolved symbol : lr_db_connect.
+[Transactions]
+SQL=
+[ExtraFiles]
+globals.h=
+[Recorded Actions]
+vuser_init=0
+Action=1
+vuser_end=0
+[Replayed Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Modified Actions]
+vuser_init=1
+Action=1
+vuser_end=1
+[Interpreters]
+vuser_init=cci
+Action=cci
+vuser_end=cci

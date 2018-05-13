@@ -1,0 +1,220 @@
+[Network Analyzer (1030:1484)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1030:1484)] Load Network Traffic Analyzers:
+[Network Analyzer (1030:1484)]     Analyzer Module: WPLUS (value=)
+[Network Analyzer (1030:1484)]     Analyzer Module: WebBase (value=GetHttpProtocolAnalyzer:api_http_filter.dll)
+[Network Analyzer (1030:1484)]     + Network Analyzer: api_http_filter.dll @ GetHttpProtocolAnalyzer Loaded!
+[Network Analyzer (1030:1484)]     + Interception Auditors: WinInetWplusInterceptionAudit:api_http_filter.dll
+[Network Analyzer (1030:1484)]     Analyzer Module: QTWeb (value=)
+[Network Analyzer (1030:1484)]     Analyzer Module: local_server (value=)
+[Network Analyzer (1030:1484)] ------------------------------------------------------------------------------------------
+[Network Analyzer (1030:1418)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:158c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:158c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  1)  PROXIED!
+[Network Analyzer (1030:1364)] Address lookup for masterconn.qq.com = 219.133.60.246
+[Network Analyzer (1030:1364)] Address lookup for masterconn2.qq.com = 183.57.48.55
+[Web Request      (1030:1418)] "GET /testlink/login.php"   
+[Network Analyzer (1030:1418)]   (Sid:  1) Client -> Server : 261 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Server -> Client : 508 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/css/testlink.css"   
+[Network Analyzer (1030:1418)]   (Sid:  1) Client -> Server : 354 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Server -> Client : 5336 bytes  (Service=HTTP)
+[Network Analyzer (1030:158c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:104c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:15e8)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: 6b8)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: c14)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: 33c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: dd4)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:158c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  2)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/css/tl_print.css"   
+[Network Analyzer (1030:1418)]   (Sid:  2) Client -> Server : 354 bytes (Service=HTTP)
+[Network Analyzer (1030:104c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  3)  PROXIED!
+[Network Analyzer (1030:1418)]   (Sid:  2) Server -> Client : 778 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/niftycube/niftycube.js"   
+[Network Analyzer (1030:1418)]   (Sid:  3) Client -> Server : 370 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  3) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  3) Server -> Client : 1975 bytes  (Service=HTTP)
+[Network Analyzer (1030:15e8)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  4)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/gui/javascript/test_automation.js"   
+[Network Analyzer (1030:1418)]   (Sid:  4) Client -> Server : 377 bytes (Service=HTTP)
+[Network Analyzer (1030: c14)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  5)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/prototype/prototype.js"   
+[Network Analyzer (1030:1418)]   (Sid:  5) Client -> Server : 378 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  4) Server -> Client : 1602 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  5) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  5) Server -> Client : 15284 bytes  (Service=HTTP)
+[Network Analyzer (1030: dd4)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  6)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/gui/javascript/testlink_library.js"   
+[Network Analyzer (1030:1418)]   (Sid:  6) Client -> Server : 378 bytes (Service=HTTP)
+[Network Analyzer (1030: 33c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  7)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images/company_logo.png"   
+[Network Analyzer (1030:1418)]   (Sid:  7) Client -> Server : 403 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  6) Server -> Client : 9444 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  7) Server -> Client : 2215 bytes  (Service=HTTP)
+[Network Analyzer (1030: 6b8)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  8)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/gui/javascript/sorttable.js"   
+[Network Analyzer (1030:1418)]   (Sid:  8) Client -> Server : 371 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  8) Server -> Client : 2920 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  8) Server -> Client : 2665 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images/navbar.gif"   
+[Network Analyzer (1030:1418)]   (Sid:  1) Client -> Server : 397 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Server -> Client : 449 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/niftycube/niftyCorners.css"   
+[Network Analyzer (1030:1418)]   (Sid:  2) Client -> Server : 349 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images/favicon.ico"   
+[Network Analyzer (1030:1418)]   (Sid:  3) Client -> Server : 277 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  2) Server -> Client : 754 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  3) Server -> Client : 1065 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  4) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  5) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  6) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  7) Connection Terminated (by Server)
+[Web Request      (1030:1418)] "GET /testlink/firstLogin.php"   
+[Network Analyzer (1030:1418)]   (Sid:  8) Client -> Server : 362 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  8) Server -> Client : 1615 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  1) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  2) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  3) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid:  8) Connection Terminated (by Server)
+[Network Analyzer (1030: 33c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: 33c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid=  9)  PROXIED!
+[Web Request      (1030:1418)] "POST /testlink/firstLogin.php"   
+[Network Analyzer (1030:1418)]   (Sid:  9) Client -> Server : 589 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  9) Server -> Client : 387 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/login.php?note=first"   
+[Network Analyzer (1030:1418)]   (Sid:  9) Client -> Server : 373 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  9) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  9) Server -> Client : 422 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid:  9) Connection Terminated (by Server)
+[Network Analyzer (1030: 33c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: 33c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 10)  PROXIED!
+[Web Request      (1030:1418)] "POST /testlink/login.php"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 607 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 629 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/index.php"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 449 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 961 bytes  (Service=HTTP)
+[Network Analyzer (1030: 33c)] Address lookup for Edwin-PC = 192.168.0.103
+[Web Request      (1030:1418)] "GET /testlink/lib/general/navBar.php"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 462 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 546 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images//magnifier.png"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 506 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 899 bytes  (Service=HTTP)
+[Network Analyzer (1030: 33c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 11)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/lib/general/mainPage.php"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 464 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 1134 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/css/ext-all.css"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 460 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/css/RangeMenu.css"   
+[Network Analyzer (1030: 33c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 477 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 566 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 6318 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/menu/ListMenu.js"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 501 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/GridFilters.js"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 499 bytes (Service=HTTP)
+[Network Analyzer (1030: 6b8)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: c14)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030: dd4)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:15e8)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:104c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:11bc)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:158c)] Address lookup for Edwin-PC = 192.168.0.103
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 2156 bytes  (Service=HTTP)
+[Network Analyzer (1030: 33c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 12)  PROXIED!
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 6838 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/Filter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 501 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/StringFilter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 507 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/css/GridFilters.css"   
+[Network Analyzer (1030:1418)]   (Sid: 12) Client -> Server : 479 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 1716 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 2118 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/DateFilter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 505 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 12) Server -> Client : 819 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/ListFilter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 505 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 2780 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/NumericFilter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 12) Client -> Server : 508 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/filter/BooleanFilter.js"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 508 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 2200 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 1526 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/src/locale/ext-lang-en_GB.js"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 498 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 12) Server -> Client : 2068 bytes  (Service=HTTP)
+[Network Analyzer (1030: 6b8)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 13)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/TableGrid.js"   
+[Network Analyzer (1030:1418)]   (Sid: 10) Client -> Server : 485 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 2935 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Server -> Client : 1532 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images/slide_gripper.gif"   
+[Network Analyzer (1030:1418)]   (Sid: 12) Client -> Server : 511 bytes (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/Reorderer.js"   
+[Network Analyzer (1030:1418)]   (Sid: 13) Client -> Server : 485 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 12) Server -> Client : 410 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 13) Server -> Client : 2906 bytes  (Service=HTTP)
+[Network Analyzer (1030: c14)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 14)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/adapter/ext/ext-base.js"   
+[Network Analyzer (1030:1418)]   (Sid: 14) Client -> Server : 493 bytes (Service=HTTP)
+[Network Analyzer (1030: dd4)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 15)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ext-all.js"   
+[Network Analyzer (1030:1418)]   (Sid: 15) Client -> Server : 480 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 14) Server -> Client : 10892 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 14116 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 13140 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 7300 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 1460 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 14600 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Network Analyzer (1030:15e8)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 16)  PROXIED!
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 16384 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/ToolbarReorderer.js"   
+[Network Analyzer (1030:1418)]   (Sid: 16) Client -> Server : 492 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 15) Server -> Client : 15760 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 16) Server -> Client : 2516 bytes  (Service=HTTP)
+[Network Analyzer (1030:158c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 17)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/ToolbarDroppable.js"   
+[Network Analyzer (1030:1418)]   (Sid: 17) Client -> Server : 492 bytes (Service=HTTP)
+[Network Analyzer (1030:104c)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 18)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/Exporter-all.js"   
+[Network Analyzer (1030:1418)]   (Sid: 18) Client -> Server : 488 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 17) Server -> Client : 2033 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 18) Server -> Client : 6963 bytes  (Service=HTTP)
+[Network Analyzer (1030:11bc)] Request Connection: Remote Server @ 192.168.0.106:80   (Service=)  (Sid= 19)  PROXIED!
+[Web Request      (1030:1418)] "GET /testlink/third_party/ext-js/ux/gridfilters/menu/RangeMenu.js"   
+[Network Analyzer (1030:1418)]   (Sid: 19) Client -> Server : 502 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 19) Server -> Client : 1595 bytes  (Service=HTTP)
+[Web Request      (1030:1418)] "GET /testlink/gui/themes/default/images/white-top-bottom.gif"   
+[Network Analyzer (1030:1418)]   (Sid: 11) Client -> Server : 514 bytes (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 11) Server -> Client : 1126 bytes  (Service=HTTP)
+[Network Analyzer (1030:1418)]   (Sid: 10) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 12) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 13) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 14) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 15) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 16) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 17) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 18) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 19) Connection Terminated (by Server)
+[Network Analyzer (1030:1418)]   (Sid: 11) Connection Terminated (by Server)
+[WebMultiInProcNotify:  (1030:10b8)] Call for OpenClipboard failed with 5 in GetStringFromClipboard
+[WebMultiInProcNotify:  (1030:10b8)] Insert Text Check: ": test1 "

@@ -1,0 +1,13 @@
+[t27]
+FileName1=t27_GridFilters.css
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/GridFilters.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_27.xml
+RequestHeaderFile=t27_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t27_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

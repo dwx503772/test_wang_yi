@@ -1,0 +1,13 @@
+[t15]
+FileName1=t15.htm
+URL1=http://192.168.0.106/testlink/lib/general/navBar.php
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_15.xml
+RequestHeaderFile=t15_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t15_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=0

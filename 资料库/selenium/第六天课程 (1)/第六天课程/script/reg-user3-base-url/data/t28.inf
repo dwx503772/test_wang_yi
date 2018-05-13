@@ -1,0 +1,13 @@
+[t28]
+FileName1=t28_DateFilter.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/DateFilter.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_28.xml
+RequestHeaderFile=t28_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t28_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

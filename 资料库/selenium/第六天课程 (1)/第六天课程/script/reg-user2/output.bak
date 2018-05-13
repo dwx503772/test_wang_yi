@@ -1,0 +1,9 @@
+Virtual User Script started at : 2016-08-13 22:25:16
+Starting action vuser_init.
+Web Turbo Replay of LoadRunner 11.0.0 for Windows 7; build 9409 (Jan 11 2012 11:34:16)  	[MsgId: MMSG-27143]
+Run Mode: HTML  	[MsgId: MMSG-26000]
+Run-Time Settings file: "C:\Users\Edwin\Desktop\µÚÁùÌì¿Î³Ì\script\reg-user2\\default.cfg"  	[MsgId: MMSG-27141]
+vuser_init.c(6): Error: C interpreter run time error: vuser_init.c (6):  Error -- Unresolved symbol : lr_db_connect.
+vuser_init.c(6): Notify: CCI trace: Compiled_code(0): vuser_init()
+.
+Action was aborted.

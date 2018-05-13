@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Wed, 17 Aug 2016 15:34:51 GMT
+Server: Apache/2.4.10 (Ubuntu)
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Set-Cookie: TESTLINK_USER_AUTH_COOKIE=647f966a9003436a220f0a8161f0f451c26dbce3d2a9185a0d4cc1cc2b79f87d; path=/
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 128
+Keep-Alive: timeout=5, max=88
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+

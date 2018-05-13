@@ -1,0 +1,10 @@
+GET /testlink/index.php HTTP/1.1
+Accept: text/html, application/xhtml+xml, */*
+Referer: http://192.168.0.106/testlink/login.php
+Accept-Language: zh-CN
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Accept-Encoding: gzip, deflate
+Host: 192.168.0.106
+Connection: Keep-Alive
+Cookie: PHPSESSID=92eutvkbda2e4f86ro7h0pfeo2; TESTLINK_USER_AUTH_COOKIE=0a4013edf55f06748bb8b2482151bc1b6b1137d969061e521d25d6bf9f3e54b2
+

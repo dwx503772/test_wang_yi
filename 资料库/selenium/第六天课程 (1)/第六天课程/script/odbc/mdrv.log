@@ -1,0 +1,25 @@
+Virtual User Script started at : 2016-08-13 22:57:39
+Starting action vuser_init.
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(4): DB Connection "Connect" started ... Wait ....
+Action.c(4): DB connection was successful
+Action.c(9): Notify: Transaction "SQL" started.
+Action.c(11): SQL Statement  execution "deletedatas" started
+Action.c(11): SQL Statement  execution was successful
+Action.c(11): ================================================
+Action.c(16): Notify: Transaction "SQL" ended with "Pass" status (Duration: 0.0443 Wasted Time: 0.0193).
+Action.c(18): DB disconnect "Disconnect" started
+Action.c(18): DB disconnect was successful
+Action.c(18): ================================================
+Action.c(26): error
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.
+Warning: Extension LrXml.dll reports error -1 on call to function ExtPerThreadTerminate
+Warning: Vuser failed to terminate extension.

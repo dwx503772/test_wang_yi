@@ -1,0 +1,15 @@
+[t6]
+FileName1=t6.htm
+URL1=http://192.168.0.106/testlink/lib/general/navBar.php
+Total=2
+RequestHeaderFile=t6_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t6_ResponseHeader.txt
+ContentType=text/html
+SnapshotXmlFile=snapshot_6.xml
+FileName2=t6_magnifier.png
+URL2=http://192.168.0.106/testlink/gui/themes/default/images//magnifier.png
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=0

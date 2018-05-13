@@ -1,0 +1,14 @@
+HTTP/1.1 200 OK
+Date: Sun, 07 Aug 2016 14:27:45 GMT
+Server: Apache/2.4.10 (Ubuntu)
+Set-Cookie: PHPSESSID=92eutvkbda2e4f86ro7h0pfeo2; expires=Mon, 08-Aug-2016 18:14:24 GMT; Max-Age=99999; path=/
+Expires: Thu, 19 Nov 1981 08:52:00 GMT
+Cache-Control: no-store, no-cache, must-revalidate, post-check=0, pre-check=0
+Pragma: no-cache
+Vary: Accept-Encoding
+Content-Encoding: gzip
+Content-Length: 1627
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: text/html; charset=UTF-8
+

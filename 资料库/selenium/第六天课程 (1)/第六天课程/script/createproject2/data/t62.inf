@@ -1,0 +1,13 @@
+[t62]
+FileName1=t62_fckstyles.xml
+URL1=http://192.168.0.106/testlink/third_party/fckeditor/fckstyles.xml
+Total=1
+ContentType=application/xml
+SnapshotXmlFile=snapshot_62.xml
+RequestHeaderFile=t62_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t62_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

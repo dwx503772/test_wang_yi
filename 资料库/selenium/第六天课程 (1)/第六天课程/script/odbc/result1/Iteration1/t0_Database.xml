@@ -1,0 +1,9 @@
+<?xml-stylesheet href="..\db_connection.xsl" type="text/xsl"?>
+<report vuGenInstallDir="D:\Program Files\HP\LoadRunner">
+  <database_validation>
+    <validation count="0" />
+    <source>DRIVER={MySQL ODBC 3.51 Driver};SERVER=192.168.0.106;PORT=3306;DATABASE=testlink;USER=root;PASSWORD=123456;OPTION=3</source>
+    <source_1>
+    </source_1>
+  </database_validation>
+</report>

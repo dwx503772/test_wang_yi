@@ -1,0 +1,13 @@
+[t40]
+FileName1=t40_Exporter-all.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/Exporter-all.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_40.xml
+RequestHeaderFile=t40_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t40_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

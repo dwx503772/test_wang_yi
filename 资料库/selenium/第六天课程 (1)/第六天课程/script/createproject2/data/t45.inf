@@ -1,0 +1,13 @@
+[t45]
+FileName1=t45.htm
+URL1=http://192.168.0.106/testlink/lib/project/projectEdit.php?doAction=create
+Total=1
+ContentType=text/html
+SnapshotXmlFile=snapshot_45.xml
+RequestHeaderFile=t45_RequestHeader.txt
+RequestBodyFile=t45_RequestBody.txt
+ResponseHeaderFile=t45_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=0

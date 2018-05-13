@@ -1,0 +1,20 @@
+Virtual User Script started at : 2016-08-21 15:30:24
+Starting action vuser_init.
+Web Services replay version 11.0.0 for Windows 7; Toolkit: "NotDefined"; build 9409
+Run-Time Settings file: "C:\Users\Edwin\Desktop\第六天课程\script\web-ws\\default.cfg"
+Vuser directory: "C:\Users\Edwin\Desktop\第六天课程\script\web-ws"
+Vuser output directory: "C:\Users\Edwin\Desktop\第六天课程\script\web-ws\"
+LOCAL start date/time:  2016-08-21 15:30:24
+vuser_init.c(3): Notify: Saving Parameter "driver = MySQL ODBC 3.51 Driver".
+vuser_init.c(4): Notify: Saving Parameter "dbip = 192.168.0.106".
+vuser_init.c(5): Notify: Saving Parameter "port = 3306".
+vuser_init.c(6): Notify: Saving Parameter "database = testlink".
+vuser_init.c(7): Notify: Saving Parameter "dbuser = root".
+vuser_init.c(8): Notify: Saving Parameter "dbpassword = 123456".
+vuser_init.c(10): Notify: Parameter Substitution: parameter "driver" =  "MySQL ODBC 3.51 Driver"
+vuser_init.c(10): Notify: Parameter Substitution: parameter "dbip" =  "192.168.0.106"
+vuser_init.c(10): Notify: Parameter Substitution: parameter "port" =  "3306"
+vuser_init.c(10): Notify: Parameter Substitution: parameter "database" =  "testlink"
+vuser_init.c(10): Notify: Parameter Substitution: parameter "dbuser" =  "root"
+vuser_init.c(10): Notify: Parameter Substitution: parameter "dbpassword" =  "123456"
+vuser_init.c(10): DB Connection "Connect" started ... Wait ....

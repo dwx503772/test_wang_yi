@@ -1,0 +1,13 @@
+[t38]
+FileName1=t38_RangeMenu.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/menu/RangeMenu.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_38.xml
+RequestHeaderFile=t38_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t38_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

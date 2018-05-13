@@ -1,0 +1,13 @@
+[t26]
+FileName1=t26_Filter.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/filter/Filter.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_26.xml
+RequestHeaderFile=t26_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t26_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

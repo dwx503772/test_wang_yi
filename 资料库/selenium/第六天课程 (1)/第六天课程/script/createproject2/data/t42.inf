@@ -1,0 +1,13 @@
+[t42]
+FileName1=t42_sort_hint.png
+URL1=http://192.168.0.106/testlink/gui/themes/default/images/sort_hint.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_42.xml
+RequestHeaderFile=t42_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t42_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

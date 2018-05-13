@@ -1,0 +1,13 @@
+[t44]
+FileName1=t44_trash.png
+URL1=http://192.168.0.106/testlink/gui/themes/default/images/trash.png
+Total=1
+ContentType=image/png
+SnapshotXmlFile=snapshot_44.xml
+RequestHeaderFile=t44_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t44_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

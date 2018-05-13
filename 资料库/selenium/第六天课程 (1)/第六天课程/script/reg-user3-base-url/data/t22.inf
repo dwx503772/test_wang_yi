@@ -1,0 +1,13 @@
+[t22]
+FileName1=t22_RangeMenu.css
+URL1=http://192.168.0.106/testlink/third_party/ext-js/ux/gridfilters/css/RangeMenu.css
+Total=1
+ContentType=text/css
+SnapshotXmlFile=snapshot_22.xml
+RequestHeaderFile=t22_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t22_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

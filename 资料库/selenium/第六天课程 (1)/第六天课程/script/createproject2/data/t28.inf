@@ -1,0 +1,13 @@
+[t28]
+FileName1=t28_ext-lang-zh_CN.html
+URL1=http://192.168.0.106/testlink/third_party/ext-js/src/locale/ext-lang-zh_CN.js
+Total=1
+ContentType=application/javascript
+SnapshotXmlFile=snapshot_28.xml
+RequestHeaderFile=t28_RequestHeader.txt
+RequestBodyFile=NONE
+ResponseHeaderFile=t28_ResponseHeader.txt
+[ProtocolInfo]
+ProtocolId=QTWeb
+[AdditionalInfo]
+IsIgnorable=1

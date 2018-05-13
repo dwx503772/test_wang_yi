@@ -1,0 +1,54 @@
+Virtual User Script started at : 2016-08-15 23:55:48
+Starting action vuser_init.
+vuser_init.c(10): DB Connection "Connect" started ... Wait ....
+vuser_init.c(10): DB connection was successful
+vuser_init.c(14): SQL Statement  execution "deletedatas" started
+vuser_init.c(14): Warning :No dataset was created.
+vuser_init.c(14): SQL Statement  execution was successful
+vuser_init.c(14): ================================================
+vuser_init.c(20): DB disconnect "Disconnect" started
+vuser_init.c(20): DB disconnect was successful
+vuser_init.c(20): ================================================
+Ending action vuser_init.
+Running Vuser...
+Starting iteration 1.
+Starting action Action.
+Action.c(14): web_add_auto_header("Accept-Language") was successful  	[MsgId: MMSG-26392]
+Action.c(17): web_url("index.php") was successful, 128 body bytes, 501 header bytes  	[MsgId: MMSG-26386]
+Action.c(26): web_url("login.php") was successful, 1465 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(35): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(37): Registering web_url("testlink.css") was successful  	[MsgId: MMSG-26390]
+Action.c(45): Registering web_url("sorttable.js") was successful  	[MsgId: MMSG-26390]
+Action.c(53): Registering web_url("testlink_library.js") was successful  	[MsgId: MMSG-26390]
+Action.c(61): Registering web_url("niftycube.js") was successful  	[MsgId: MMSG-26390]
+Action.c(69): Registering web_url("test_automation.js") was successful  	[MsgId: MMSG-26390]
+Action.c(77): Registering web_url("company_logo.png") was successful  	[MsgId: MMSG-26390]
+Action.c(85): Registering web_url("prototype.js") was successful  	[MsgId: MMSG-26390]
+Action.c(93): Registering web_url("favicon.ico") was successful  	[MsgId: MMSG-26390]
+Action.c(101): web_concurrent_end was successful, 44203 body bytes, 2678 header bytes  	[MsgId: MMSG-26386]
+Action.c(103): web_url("tl_print.css") was successful, 442 body bytes, 335 header bytes  	[MsgId: MMSG-26386]
+Action.c(111): web_concurrent_start was successful  	[MsgId: MMSG-26392]
+Action.c(113): Registering web_url("navbar.gif") was successful  	[MsgId: MMSG-26390]
+Action.c(121): Registering web_url("niftyCorners.css") was successful  	[MsgId: MMSG-26390]
+Action.c(129): web_concurrent_end was successful, 585 body bytes, 618 header bytes  	[MsgId: MMSG-26386]
+Action.c(133): web_url("New User?") was successful, 1363 body bytes, 252 header bytes  	[MsgId: MMSG-26386]
+Action.c(143): Notify: Transaction "Reg" started.
+Action.c(144): web_submit_data("firstLogin.php") was successful, 135 body bytes, 251 header bytes  	[MsgId: MMSG-26386]
+Action.c(165): DB Connection "Connect" started ... Wait ....
+Action.c(165): DB connection was successful
+Action.c(169): Notify: Transaction "sql" started.
+Action.c(170): SQL Statement  execution "deletedatas" started
+Action.c(170): SQL Statement  execution was successful
+Action.c(170): ================================================
+Action.c(177): Notify: Transaction "sql" ended with "Pass" status (Duration: 0.0598 Wasted Time: 0.0184).
+Action.c(180): Notify: Transaction "Reg" ended with "Pass" status (Duration: 0.6691 Wasted Time: 0.0517).
+Action.c(185): web_url("login.php_2") was successful, 1493 body bytes, 389 header bytes  	[MsgId: MMSG-26386]
+Action.c(194): DB disconnect "Disconnect" started
+Action.c(194): DB disconnect was successful
+Action.c(194): ================================================
+Ending action Action.
+Ending iteration 1.
+Ending Vuser...
+Starting action vuser_end.
+Ending action vuser_end.
+Vuser Terminated.

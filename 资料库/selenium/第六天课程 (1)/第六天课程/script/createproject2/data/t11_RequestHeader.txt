@@ -1,0 +1,8 @@
+GET /testlink/gui/themes/default/images/favicon.ico HTTP/1.1
+Accept: */*
+Accept-Encoding: gzip, deflate
+User-Agent: Mozilla/5.0 (compatible; MSIE 9.0; Windows NT 6.1; Trident/5.0)
+Host: 192.168.0.106
+Connection: Keep-Alive
+Cookie: PHPSESSID=65403iu2ll9g7gckmtbv5i5557
+

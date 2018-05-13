@@ -1,0 +1,44 @@
+//number，输入星星的个数9，11,13,15 type是类型，1代表实心，0代表空心
+void print(int number,int type)
+{
+   	for(int i=1;i<=(number+1)/2;i++)
+	{
+	   for(int j=1;j<=i-1;j++)
+	   {
+	      printf(" ");
+	   }
+	   for(int k=1;k<=number+2*(1-i);k++)
+	   {
+	       if(type ==1)
+		   {
+		      printf("*");
+		   }
+		   else
+		   {
+		       if(i==1)
+			   printf("*");
+			   else
+			   {
+				  if(k==1||k==number+2*(1-i))
+				  {
+					 printf("*");
+				  }
+				  else
+				  {
+					 printf(" ");
+				  }
+			   }
+		   }
+
+	   }
+	   printf("\n");
+	}
+}
+int main(int argc, char* argv[])
+{
+    printf("请输入星星的个数,类型\n");
+	int num,type;
+	scanf("%d%d",&num,&type);
+	print(num,type);
+	return 0;
+}

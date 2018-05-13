@@ -1,0 +1,4 @@
+(1) Select S#,SN from S,C,SC Where SC.S#=S.S# AND SC.C#=C.C# AND C.CN='Ë°ÊÕ»ù´¡'
+(2) Select SN,SD from S,C,SC Where SC.S#=S.S# AND SC.C#=C.C# AND SC.C#='C2'
+(3) Select SN,SD from S,C,SC Where SC.S#=S.S# AND SC.C#=C.C# AND SC.C#!='C5'
+(4) Select Count(C#) from S,SC Where S.S#=SC.S#

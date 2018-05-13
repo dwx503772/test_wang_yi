@@ -1,0 +1,34 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: 1 - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5E.tmp" with contents
+[
+/nologo /MLd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_CONSOLE" /D "_MBCS" /Fp"Debug/1.pch" /YX /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"D:\51Testing\汤老师-C\我的练习\指针练习\1.c"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5E.tmp" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5F.tmp" with contents
+[
+kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:console /incremental:yes /pdb:"Debug/1.pdb" /debug /machine:I386 /out:"Debug/1.exe" /pdbtype:sept 
+".\Debug\1.obj"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSP5F.tmp"
+<h3>Output Window</h3>
+Compiling...
+1.c
+D:\51Testing\汤老师-C\我的练习\指针练习\1.c(24) : warning C4013: 'swap' undefined; assuming extern returning int
+D:\51Testing\汤老师-C\我的练习\指针练习\1.c(33) : warning C4716: 'swap' : must return a value
+Linking...
+
+
+
+<h3>Results</h3>
+1.exe - 0 error(s), 2 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,10 @@
+
+TEST CASES
+case	A1	B1	C1	pairings
+1	A2	B2	C2	3
+
+PAIRING DETAILS
+var1	var2	value1	value2	appearances	cases
+A1	B1	A2	B2	1	1
+A1	C1	A2	C2	1	1
+B1	C1	B2	C2	1	1

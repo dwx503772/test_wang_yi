@@ -1,0 +1,1161 @@
+学习内容:
+1)Linux安装,配置;
+2)Linux客户端工具使用(Secure CRT/WinSCP)
+3)vim编辑器使用
+4)Linux常见命令
+  (1)文件管理
+  (2)系统管理
+  (3)用户管理
+  (4)磁盘管理
+  (5)网络管理
+  (6)备份压缩
+  (7)程序安装
+
+-----------------------------------------------
+1.Linux操作系统
+是一个自由且开发源代码的类Unix操作系统.
+
+1991  Linus 
+
+GNU/Linux
+
+多厂商: RedHat Debian Centos ...
+
+2.Linux操作系统组成
+
+      应用程序
+      用户接口(shell/GNOME,KDE)
+      内核(进程/内存/文件系统/设备管理)
+      硬件(CPU/RAM/Disk)
+
+3.在虚拟机上搭建Linux服务器的步骤
+1)安装虚拟机管理软件(若有,则跳过),VMWare workstation 8/9/10
+2)打开VMWare workstation,新建一个虚拟机(文件)
+  这一步要确认虚拟的机器所安装的操作系统的类型和版本
+3)安装客户机操作系统
+  这里安装的操作系统是上一步骤指定的.
+4)配置Linux
+-----------------------------------------------------------
+5)安装Linux客户端工具(Secure CRT/WinSCP)
+
+6)网络配置
+
+
+
+打开虚拟机:选中虚拟机的配置文件,比如Red Hat Enterprise Linux 5.5(32bit).vmx,直接打开
+注意:拷贝虚拟机文件之前,一定要将虚拟机及虚拟机管理软件关闭
+                            ctrl + alt
+鼠键环境:  本机物理机器 <---------------  虚拟机
+                         --------------->
+                            ctrl + g
+
+分区:
+      根分区  /
+      交换分区 swap  一般设置为物理内存的2倍. 1500M * 2 = 3000M
+
+Windows超级管理员: Administrator
+Linux            : root
+
+
+选择安装的程序.
+
+配置:
+     防火墙: 禁用
+     SELinux:禁用
+
+                        ctrl + alt + F7
+用户接口:   1)字符界面 --------------------->  2)图形化界面
+                       <--------------------
+                        ctrl + alt + F1~F6
+
+
+怎样连接Linux虚拟机?
+
+三种网络连接方式:                                                  网卡
+NAT模式:    虚拟机可以访问其他机器,但是其他机器不能访问虚拟机     vmnet8
+Bridge模式: 虚拟机与实际物理机器没有区别.                         本地连接网卡
+Host-Only模式:虚拟机不能访问其他机器,其他机器也不能访问虚拟机     vmnet1
+
+
+1.首先确定虚拟机的网络连接方式,比如NAT
+2.打开本地机器的网络连接属性,查看vmnet8虚拟网卡相关的信息
+  vmnet8对应的IP地址为: 192.168.111.1
+
+        本机 ---------------------- Linux虚拟机
+       vmnet8
+      192.168.111.1               192.168.111.3~254
+      255.255.255.0
+3.更改Linux虚拟机IP地址(保证虚拟机与本机在同一网段).
+
+--------------------------------------------------------------------
+vim编辑器的使用
+
+vim命令行
+vim图形化
+
+1)新建文本文件
+vim new_filename
+vim
+保存时指定文件名 :wq new_filename
+2)修改文本文件
+vim filename
+
+图形化界面:  记事本   使用  键盘 + 鼠标   编辑模式
+字符界面:     vim     使用  键盘          若干种模式,每种完成特定的功能
+
+vim模式/切换:
+                   可视模式:功能类似于普通模式,只是光标越过的字符被高亮显示
+                         
+                   普通模式(命令模式,默认):移动光标,删除,复制粘贴
+
+ 插入模式:写入文本            命令行模式:保存,退出,设置,查找替换
+
+          i,I,a,A,o,O,c,C,s,S
+普通模式 ---------------------> 插入模式
+         <--------------------
+                esc
+
+               : /  ?
+普通模式 ---------------------> 命令行模式
+         <--------------------
+          1)输入命令未执行,按esc
+          2)命令执行完后,自动切换成普通模式
+
+           v, V, ^v
+普通模式 ---------------------> 可视模式
+         <--------------------
+          1)按esc
+          2)分别重复按 v,V,^v
+          3)执行了删除等操作,自动切换到普通模式
+
+
+vim基本操作流程:
+
+1)移动光标
+光标(字符在文件中的位置,以x行y列标识)      ^
+                                  <-   |   |   ->
+                                       v
+                                    h  j   k   l (移动命令)
+模式:  正整数 + 移动命令  表示对命令的重复
+                                    10h   3j
+
+2)删除文本
+x 删除光标所在的字符
+X 删除光标前的字符
+dd 删除一行   3dd
+J 合并两行
+
+3)撤销与重做
+
+dd  (do)
+u   (undo)
+^r  (redo)
+
+4)插入文本
+(1)i(insert) 在光标前插入字符
+(2)I         在行首插入字符
+(3)a(append) 在光标后插入字符
+(4)A         在行末插入字符
+(5)o(open a newline) 在光标下方插入新行
+(6)O                 在光标上方插入新行
+(7)c(change)  cl 修改一个字符
+              cc 修改一行
+(8)C          c$ 修改到行末
+(9)s          cl 
+(10)S         cc
+
+5)保存退出
+命令行模式:
+:w  write    保存
+:q  quite    退出vim
+:wq 保存退出
+:x  保存退出
+:w! 强制保存
+:q! 强制不保存退出
+:wq! 强制保存退出
+
+普通模式:
+ZZ (保存退出)
+
+--------------------------------------------------------------------
+vim是怎样编辑文本的?
+
+对文本做哪些操作: 
+vim通过操作符来实现,本质上对文本进行操作的命令.
+删除:d  (delete)
+复制:y  (yank)
+修改:c  (change)
+
+操作文本的范围是什么?
+1)光标的移动确定文本范围
+dj
+2)可视模式中移动光标确定文本范围
+3)文本对象
+文本对象:是vim内置的表示特殊文本范围的字符串.只要光标位于该文本对象范围内,则表示该文本对象被选中.
+{  }        左边界文本内容右边界
+            包含 a{ a}
+            内含 i{ i}
+
+vim的三种常见使用方法:
+1)操作符 + 动作(光标移动)
+2)可视模式 + 操作符
+3)操作符 + 文本对象
+
+光标的移动:
+                                                          ---------><----------
+          字符     h l                      -->指定字符   f+指定字符 F+指定字符 nf  nF
+
+          单词     w  b  e  ge  W  B E gE   -->指定单词   本质上是字符串搜索
+ 
+           行      行首 0 ^  行末 $         -->指定行     nG
+
+          
+
+
+vim中字符串的搜索:
+1)正向搜索
+/str
+n (next)查找下一个(同搜索方向)
+N       查找上一个
+
+2)反响搜索
+?str
+n 查找下一个
+N 查找上一个
+
+替换
+:范围s/old_str/new_str/选项
+
+范围表示:
+m,n m到n行
+%  所有行
+1,$ 1到最后一行
+
+选项
+g  全局
+
+普通模式中的搜索
+将光标停留在要搜索的单词上,
+正向查找  *
+反向查找  #
+
+第一行: 1G/gg
+最后一行:G
+
+显示行号: 
+:set nu
+:set nonu
+
+
+可视模式
+1)逐字选择  v
+o 调整字符范围
+2)逐行选择  V
+o 调整行范围
+3)列块选择  ^v
+o/O o对角线移动 O水平方向移动
+
+复制粘贴移动
+
+复制 y              p/P
+删除 d  ----> 缓存  ----> 放在指定的位置
+修改 c
+
+字符以行为单位:    p   在行下方   P  行上方  ddp
+不以行为单位:      p   在光标后   P  在光标前  xp
+
+常见文本对象:
+aw
+iw
+a[
+i[
+a(
+i(
+a{
+i{
+...
+-------------------------------------------------------------------------------
+4)Linux常用的命令
+
+1)命令的格式
+
+命令提示字符串 提示符 命令行
+提示符: # root  其他用户 $
+
+命令名 选项 参数
+ls      -l   /usr
+
+注意:
+1)命令名一般小写
+2)三者之间要用空白分隔
+3)选项可取0个或多个,多个选项之间要用空白分隔
+一般情况下选项前都带一个 -
+-单个字符
+--单词
+多个选项合并   ls -l -t -r  -->  ls -ltr
+4)参数可取0个或多个,多个参数之间要用空白分隔
+5)一般情况下选项,参数的顺序不重要
+
+选项: 可以看成一个功能的开关.
+参数: 命令处理的对象或数据.最常见的是文件或文件夹.
+
+2)命令的参数表示
+文件:   文件
+        文件夹(目录)
+
+文件的位置----> 路径
+
+绝对路径:  从根(/)开始的路径
+                                               /          --1 level
+
+                                      bin   usr  etc  lib --2 level
+                                                 
+                                                 sysconfig--3 level  --current directory
+
+                                           network-scripts--4 level
+
+                                                ifcfg-eth0--5 level
+
+文件ifcfg-eth0的绝对路径:
+/etc/sysconfig/network-scripts/ifcfg-eth0
+
+文件夹network-scripts的绝对路径:
+/etc/sysconfig/network-scripts/
+
+相对路径:相对当前文件夹的路径.
+特殊的目录:   .  当前的目录
+              .. 当前目录的父目录(上一级)
+
+文件ifcfg-eth0的相对路径:
+./network-scripts/ifcfg-eth0
+
+文件夹network-scripts的绝对路径:
+./network-scripts/
+
+/bin目录的表示:
+..  /etc
+..  /
+-->   ../../bin
+
+--------------------------
+通配符: 使用一些特殊的字符来表示一些字符.
+
+       1) *  匹配任意字符串(空串,1个字符,2字符,...n个字符)
+       2) ?  匹配任意单个字符
+       3) [] 匹配方括号中列出的单个字符
+                字符若连续可使用连字符   a-z  0-9  3-7  a-z0-9
+                若要排除方括号中列出的单个字符可以使用 ! (否定)
+
+若当前文件夹下的文件或文件夹作为参数,可以省略其前面的 ./
+
+-----------------------------------------------------------
+常见的热键的使用:
+1)回车键: 提交命令
+        续行符: 可以将命令写在多行上. 在每一行的最后写上 \
+
+
+2)Tab键
+(1)命令补齐    1>按一次  唯一匹配自动补齐
+               2>按两次  显示所有的匹配项
+(2)文件补齐    同(1)
+
+3)^c          结束命令运行
+
+4)^d          结束键盘输入
+
+5)^z          将命令放入后台暂停执行. 有一个 [jobid]
+               fg %jobid
+
+-------------------------------------------------------------
+常用的Shell快捷键
+^a (ahead)  光标移到命令行首
+^e (end)                  末
+
+^u          光标前的命令删除
+^k              后
+
+^w          删除光标前的单词
+
+^p          向前查看历史命令
+^n            后
+^l          清屏
+
+-------------------------------------------------------------
+历史命令
+history
+history 50
+!!  执行上一个历史命令
+!str 从历史命令中搜索以str打头的最近的历史命令来执行
+!?str 从历史命令中搜索包含str的最近的历史命令来执行
+
+-------------------------------------------------------------
+命令类型:
+
+1)内部命令:  集成在Shell中
+help
+2)外部命令:  一般对应一个二进制的文件.
+
+type command -->builtin   内部
+             -->文件路径  外部
+
+
+-------------------------------------------------------------
+命令的帮助:
+1)help 命令名   针对内部命令
+2)命令名 --help 所有命令
+3)man 命令名
+            翻页  空格  下一页
+                   b    上一页
+                  enter/j 逐行向下 
+                   k            上
+            退出  q
+4)info 命令名
+
+-------------------------------------------------------------
+文件夹管理的重点命令:
+
+基本命令:  
+ls  (list)
+cd  (change directory)
+pwd (print working directory)
+
+ls   file
+ls   dir
+
+常见选项:
+-l: 显示文件的属性.
+
+[root@localhost ~]# ls -l
+总计 64
+-rw------- 1 root root  1202 2015-05-25 anaconda-ks.cfg
+drwxr-xr-x 2 root root  4096 05-25 11:12 Desktop
+-rw-r--r-- 1 root root 36346 2015-05-25 install.log
+-rw-r--r-- 1 root root  4780 2015-05-25 install.log.syslog
+
+类型 权限 硬连接数 所属用户 用户组 大小 修改时间 文件名
+
+别名: ll
+alias 别名
+
+-a: 显示所有的文件(包含隐藏文件,以.打头的文件)
+
+-t: 按修改时间排序
+
+-r: 逆序
+
+--full-time:显示日期和时间
+
+-d: 仅针对该文件夹
+
+-----------------------------
+文件类型:
+                 1)普通文件   (1)文本文件(ASCII)(2)二进制文件(3)数据文件    -
+        文件:    2)链接文件   快捷方式(link)                                l
+                 3)设备文件   字符设备(character)                           c
+                              块设备(block)                                 b
+                 4)套接字文件 socket                                        s
+                 5)管道文件   pipe                                          p
+
+       文件夹:   目录         directory                                     d
+
+查看文件类型:
+1)ls -l   or  ll
+2)file 文件名
+3)stat 文件名
+
+------------------------------
+文件权限:
+
+   权限\类型             文件                      文件夹(目录)
+------------------------------------------------------------------------
+     r  read          查看文件的内容            列出其下的文件和目录(ls)
+------------------------------------------------------------------------
+     w  write         可以修改文件内容          创建,删除,移动,重命名其下的文件和目录
+------------------------------------------------------------------------
+     x  execute       可以将文件当作程序运行    可以进入文件夹(cd)
+------------------------------------------------------------------------
+     -  none    没有对应的权限
+
+
+张三              相机
+
+             使用相机:          张三          家庭         其他(朋友,同事)
+             使用文件:          用户          用户组       其他用户
+
+----------------------------------------------------
+cd
+cd dir
+
+常见选项:
+
+        -P   将路径中的链接文件替换成链接指向的文件路径
+
+常见特殊目录:
+
+             .   当前目录
+            ..   父目录
+            
+            ~    当前用户的家目录
+            ~username  表示username用户的家目录
+
+            -     前一次操作的目录
+                         cd /etc/sysconfig
+             /home/abc  ------------------->  /etc/sysconfig
+                        <------------------
+                            cd -
+                        ------------------->
+                            cd -
+
+------------------------------------------------------
+pwd
+
+pwd 无参数
+
+常见选项:  
+         -P 同cd
+
+------------------------------------------------------
+useradd zhangsan
+su - zhangsan
+exit
+touch file1 file2
+ln -s 源文件路径  链接文件名称
+mkdir -p  a/b/c/d
+
+------------------------------------------------------
+文件操作:
+
+创建: touch mkdir
+拷贝,移动,删除: cp  mv  rm
+创建链接: ln
+
+touch file
+
+序列生成:
+         1)大括号扩展机制
+           生成任意字符串的一种机制.
+           no{ab,ef,kkk,like,or}and --> noaband noefand nokkkand nolikeand noorand
+           若字符串是连续的可以用 .. 连接,比如 {a..z} {1..100}
+         2)seq命令生成
+           seq begin  step end
+           seq 1 1 100
+
+mkdir dir
+常见选项:
+-p  创建具有层次结构的目录:
+                       a/b/c/d
+
+创建一颗目录树:  
+                                    a
+                                   / \
+                                  b   c
+                                 /|\  /\
+                                e f g h i
+
+mkdir -p   a/{b/{e,f,g},c/{h,i}} 
+         
+----------------------------------------------
+cp (copy)
+       src    dest
+1)cp  files   dir
+(1)dir 存在     文件拷贝
+(2)dir 不存在   case1:  files > 1  error
+                case2:  files = 1  将文件拷贝到其父目录并重命名
+2)cp -r dirs    dir
+(1)dir 存在     目录拷贝
+(2)dir 不存在   case1:  dirs > 1  error
+                case2:  dirs = 1   将目录拷贝到其父目录并重命名
+3)cp  files    file
+(1)file 不存在 case1:  files > 1  error
+               case2:  files = 1  将文件复制一份放在当前目录下
+(2)file 存在   case1:  files > 1  error
+               case2:  file = 1   将源文件内容覆盖目标文件内容
+
+
+vim编辑多个文件
+
+vim file1 file2 file3 ....
+
+:n   切换到下一文件
+:N   切换到上一文件
+
+常见选项:
+1) -r  拷贝的对象包含目录必须使用该选项
+2) -i  与用户交互
+注意操作系统cp别名
+alias cp
+unalias cp
+3) -f  强制覆盖
+4) -p  保持源文件的属性
+
+mv( move )
+
+
+rm ( remove )
+rm  files
+rm  dirs
+
+
+常见选项:
+1) -i  与用户交互
+2) -r  当删除的对象包含目录必须使用
+3) -f  强制删除(谨慎使用)
+
+rm -rf files dirs
+
+------------------------------------------
+ln ( link )
+创建链接文件.
+
+1)软链接(符号链接)  类似于windows中的快捷方式
+ln -s  源目录  链接文件名
+       源文件
+
+!$ 表示上一个命令的最后一个参数
+
+删除了源文件和目录,则链接文件失效.
+
+2)硬连接
+ln [-d] 源文件  链接文件名
+
+删除了源文件,链接文件仍然有效.不能对目录建立硬连接
+
+file  index node  --> inode
+硬连接有相同的inode,软链接有不同的inode.
+
+ls -li
+
+----------------------------------------
+文件查看:
+(文本文件)
+
+查看文件所有内容:  cat more less
+查询文件部分内容:  head tail
+
+cat  file1 file2 file3 ...
+
+合并文件  cat file1 file2 ... > mergefile
+
+more file1 file2 file3 ...
+
+分页显示    翻页: 参看man
+
+less file1 file2 file3 ...
+1)查看文件
+  翻页:   可以使用 vim 的 j k
+2)搜索文本
+  正向查找  /str
+  反向查找  ?str
+3)编辑文本
+  less file 回车
+  按v 回车
+  :wq 退出编辑
+  q 退出less
+4)监控文本
+  less file 回车
+  按F  回车
+  ^c   退出监控
+  q  退出less
+
+head file
+前10行
+指定:  -n 正整数
+       -正整数
+
+
+tail file
+后10行
+指定: 同head
+
+
+显示文本文件的第5行到第10行
+
+head -10  file | tail -6
+
+| 管道
+
+监控文本
+tail -f file
+停止监控: ^c
+
+tail -100f file
+显示最后的100行并且处于监控状态.
+
+文件权限:  chmod  chown
+
+chmod ( change file or dir mode)
+                          
+用户类型:                用户      用户组    其他用户   所有用户
+                         u(ser)    g(roup)    o(thers)    a(ll)    file
+权限类型:                r(ead)    w(rite)   ex(ecute)   s  t
+操作类型:                +(add)    -(delete)   =(modify)
+
+chmod  u/g/o/a  +/-/=  r/w/x   filename
+
+                          r=4        r=4       r=4
+                          w=2        w=2       w=2
+                          x=1        x=1       x=1
+                          -=0        -=0       -=0
+
+
+三位八进制数表示法:    chmod 644 filename
+                             rw-r--r--
+
+
+
+常见选项: -R(递归)
+
+chmod -R xxx dir
+
+---------------------------------------------------------
+chown ( change file or dir owner )
+
+1)chown  user  filename    更改用户
+2)chown  .group filename    更改用户组
+         :group filename
+3)chown  user.group filename 更改用户和用户组
+         user:group filename
+
+
+chgrp ( change group ) 
+chgrp group filename
+
+---------------------------------------------------------
+文件搜索命令:
+1)从目录中找文件路径     which  whereis  find
+2)从文本中找你想要的内容 grep
+
+1. which
+外部命令能否运行,which 外部命令
+
+从 $PATH 指定的目录中搜索 二进制文件
+
+2. whereis
+从系统指定的目录中搜索 二进制文件 帮助文件 源文件
+
+3. find
+
+   find 目录 类型 [关键字] 动作
+
+1)find  dir -name 'key' [-print]
+2)find  dir -mtime n/+n/-n
+
+                          |                   -mtime +3
+                   -------2015-05-26 11:00    -mtime 3 (2015-05-25 11:00 ~ 2015-05-26 11:00)
+                          |                   -mtime -3    
+                   -------当前时间 2015-05-29 11:00
+3)find dir -size nc/+nc/-nc
+                    +大于 -小于
+4)find dir -user username
+5)find dir -group groupname
+6)find dir -perm xxx  根据权限查找
+7)find dir -type 'filetype'
+                  普通文件  f  链接文件  l  字符设备文件 c 块设备文件 b 套接字文件 s 管道文件 p
+                  文件夹 d
+
+
+组合条件:
+-a  and(默认)
+-o  or
+!   not
+
+动作:
+-print  默认  将查询结果显示在屏幕上.
+-exec   执行其他命令
+
+find /var -name '*.log' -exec cp {} /home/backup/ \;
+                                代表搜索到的文件  执行命令
+
+-ok     执行其他命令并需要确认
+
+--------------------------------------------------------------
+grep
+
+grep 'str' file
+
+skkdkdkzhangsandkdlldld
+ddldllddddldlld
+dldlldldlzhangsanddlldld
+zhangsanldlldldlld
+dldlldldlld
+
+dldldlldldzhangsan
+
+正则表达式:
+           是一个特殊的字符串  1:n
+           用以匹配或描述多个满足句法规则的字符串的单个特殊的字符串
+                                 元字符 + 普通字符
+
+1)普通元字符 6
+(1)* 重复其前面的字符0至多次
+  a*    空串 a aa aaa aaaa aaaaa ....
+(2). 匹配单个字符
+  李.  李..
+(3)^ 匹配行首    cat t.txt |grep '^ how' 显示文件中以how开头的内容
+(4)$ 匹配行末   cat t.txt |grep '^how$'  显示文件中以how结尾的内容
+(5)[] 匹配列出的单个字符
+   [^] 匹配没有列出的单个字符
+   [-] 连续的字符可以用连字符简化书写
+(6)\{m,n\}  重复其前面的字符m至n次
+   \{m,\}   重复其前面的字符m次以上
+   \{m,m\}                  m次
+2)扩展元字符
+(1)+ 重复其前面的字符1至多次
+a+  a aa aaa aaaa ....
+(2)? 重复其前面的字符0至1次
+a?  空字符  a
+(3)() 组合
+ab*   a ab abb abbb ...
+(ab)* 空字符 ab abab ababab ...
+(4)|  选择
+[abcd] a or b or c or d
+zhangsan|lisi|wangwu|liuliu
+(5){m,n}
+
+grep命令:
+
+   grep 'str' file
+
+常见选项:
+1)-i   ignorecase 忽略大小写 grep -in [tuwei] a 其中a文件中有
+                                                     tuwei
+                                                     TUWEI
+                                                     Tuwei
+                                                     TuWei
+2)-n   number     显示行号
+3)-c   count      统计行数
+4)-v   revsert    对条件取反
+5)-q   quit       查找到内容即退出 -->根据退出状态判断文本是否在文件中存在
+                  echo $?    0  -- 查找成功
+                            非0 -- 查找失败
+6)-w   word        精确匹配单词
+7)-x               精确匹配行
+8)-B m  显示前m行
+  -A n  显示后n行
+  -C m  显示前后m行
+9)-r   递归搜索目录下的文本中的内容
+ grep -r 'str' dir
+
+grep -E 'str' file 若str中包含扩展的元字符则必须使用-E选项
+--------------------------------------------------------------------------------
+系统管理命令:  Linux的程序与资源管理
+
+程序:  ps  top  kill killall 
+系统:  free uname 
+
+ps(proccess status)
+
+1)ps -ef  显示当前系统中所有进程
+UID        PID  PPID  C STIME TTY          TIME CMD
+root         1     0  0 May25 ?        00:00:01 init [5] 
+          进程号                                程序名
+
+ps -ef | grep 'pid' 
+ps -ef | grep 'imagename'
+
+2)ps aux   显示当前系统中所有进程
+USER       PID %CPU %MEM    VSZ   RSS TTY      STAT START   TIME COMMAND
+root         1  0.0  0.0   2072   580 ?        Ss   May25   0:01 init [5]
+          进程号
+                                                  进程名
+ps aux | grep 'pid' 
+ps aux | grep 'imagename'
+
+
+top
+动态监控系统资源(CPU,RAM)
+
+系统资源利用概况:
+load average: 0.00, 0.01, 0.00  系统在1分钟  5分钟  15分钟之内的平均负载
+uptime
+Mem:   1518668k total,  1050300k used,   468368k free,   145624k buffers
+Swap:  3068404k total,        0k used,  3068404k free,   727084k cached
+物理内存 Mem
+虚拟内存(swap分区)
+free -m  内存单位为MB
+命令的参数:
+q  退出监控状态
+在监控状态按相应的键
+1.P大写  对cpu资源进行排序
+2.M  对ram资源进行排序
+3.c  显示command的详细情况
+
+-d n  每隔n秒刷新一次 例如 top -d 5 表示每5秒刷新一次
+
+-------------------------------------------------------------
+kill
+
+1)查看信号
+kill -l
+
+2)结束进程
+  15 SIGTERM   正常结束
+  9 SIGKILL    强制结束
+
+kill -s no/desc pid1 pid2 pid3 ...
+如 kill -s SIGTERM  --->  kill -s 15  --> kill -15
+kill -s SIGKILL  --->  kill -s 9   --> kill -9
+通过
+
+
+killall
+根据程序名来结束进程.
+killall 程序名 删除所有进程
+
+uname  显示具体的系统信息
+-a 所有信息
+-r  内核版本
+-i  i386 i586 -->32bit  
+    _64       -->64bit
+
+-------------------------------------------------------------------
+用户管理:
+用户: useradd  userdel
+用户组: groupadd groupdel
+管理: passwd id su
+
+useradd/adduser
+useradd username
+useradd -g groupname username
+
+1)一般会创建/home/username目录作为用户的家目录
+2)若没有指定用户属于哪个组,则会默认创建一个与用户名同名的用户组
+
+userdel:
+userdel username  删除用户，用户的家目录还在
+userdel -r username  删除用户和数据
+
+groupadd:
+groupadd groupname
+
+passwd:
+root使用passwd
+1)passwd
+2)passwd username
+
+其他用户使用passwd
+1)passwd
+
+passwd -l username   (lock)锁定用户
+passwd -u username   (unlock)解锁用户
+
+id:
+用户id   --> uid
+用户组id --> gid
+
+1)root   uid=0 gid=0
+2)系统内部用户 uid/gid 1-499
+3)普通用户 500-
+
+-----------------------------------
+su
+切换用户
+1)su  username
+沿用被切换用户的环境变量			
+
+2)su - username
+启用切换用户新的环境变量
+
+3)su [-] username -c "命令"
+执行命令后立即返回
+
+当前用户root:
+ifconfig  --ok
+
+su c72
+
+ifconfig  --ok
+
+su - c72
+
+ifconfig  --fail
+
+root -->其他用户不需要密码,除此之外都需要输入密码
+
+----------------------------------------------------------
+网络管理:
+ifconfig netstat ping
+
+ifconfig  显示IP等信息
+ifconfig eth0
+
+设置IP
+ifconfig eth0 192.168.111.111  (临时)
+
+永久修改IP地址
+vim /etc/sysconfig/network-scripts/ifcfg-eth0
+
+IPADD
+
+ifdown eth0 取消激活
+ifup   eth0 激活
+
+service network stop|start|restart  停止启动重启整个网络设备
+
+netstat
+
+netstat -ano 显示网络连接、路由表和网络接口信息 
+
+[root@localhost ~]# netstat -anp
+Active Internet connections (servers and established)
+Proto Recv-Q Send-Q Local Address               Foreign Address             State       PID/Program name   
+tcp        0      0 127.0.0.1:2208              0.0.0.0:*                   LISTEN      3199/hpiod          
+tcp        0      0 0.0.0.0:623                 0.0.0.0:*                   LISTEN      2985/rpc.statd  
+协议                本地IP:端口                 远程IP:端口                             进程号/程序名
+
+
+
+netstat -anp | grep 'port'  
+netstat -anp | grep 'pid'
+netstat -anp | grep 'programname'
+
+---------------------------------------------------
+ping IP/域名/机器名
+^c 停止
+---------------------------------------------------
+磁盘管理:
+
+df du mount umount
+
+df -h  查看磁盘分区情况
+
+du -s dir   默认K字节
+du -s -B m/g/t/P dir
+
+mount 挂载
+
+1)查看挂载
+mount
+
+2)挂载文件系统
+
+文件:    存储设备    类型
+          磁盘      ext3
+          光盘      iso9660
+          U盘       vfat
+        共享文件    nfs/cifs
+
+mount -t 类型  设备  虚拟目录  如mount -t iso9660  scd0(光盘设备名称) 目录
+
+3)卸载文件系统 
+umount 设备  
+umount 虚拟目录
+
+umount -l  (lazy)
+
+--------------------------------------------------
+备份压缩
+
+常见的压缩格式:
+Windows:  .rar .zip .7Z
+Linux:   .zip .gz  .bz2 .tar.gz .tar.bz2
+
+(1) .gz
+gzip file --> file.gz   压缩文件        原文件不存在
+gzip -d file.gz --> file 解压缩
+
+(2) .bz2
+bzip2 file --> file.bz2  压缩文件      原文件不存在
+bzip2 -d file.bz2 --> file  解压缩
+
+(3) .zip
+zip last（表示最后的压缩文件名）.zip file  原文件依然存在，同时将原文件压缩成压缩文件
+unzip last.zip    原文件保留 可以覆盖原文件也可以重命名
+
+tar -->  打包  解包              --> *.tar
+    -->  压缩  解压(gzip/bzip2)  --> *.tar.gz / *.tar.bz2
+
+1)-c (create) 创建包或压缩文件
+2)-v (view)   查看过程
+3)-f (file)   指定操作的文件
+4)-r (readd)  将文件加入包中
+5)-C (path)   指定路径
+6)-z (gzip)   使用gzip处理文件
+7)-j (bzip2)  使用bzip2处理文件
+8)-t (test)   仅仅查看包/压缩文件中的内容
+9)-x          当解包或解压缩时必须使用
+10)--exclude=path  排除指定路径中的文件
+
+1)tar -cvf  打包文件 tar cvf xxx.tar xxx x xxxx…………
+2)tar -rvf   将文件加入包中 如XXX.tar  XXX文件   将XXX文件加入XXX,tar包中
+3)tar -tvf  查看包/压缩文件中的内容
+4)tar -xvf  解包
+5)tar -zxvf  -C path 解压解包到指定路径  tar zxvf -C xxx.tar.gz /home(a/b a/)    
+tar xvf -C xxx.tar.gz/xxx.tar /home(a/b a/) 
+6)tar    -czvf 打包并压缩
+7)tar - cjvf   用bzip2压缩文件
+8)tar   -xzvf  解压并解包（用gzip解压）
+9)tar   -xjvf  解压并解包（用bzip2解压）
+10)tar -cvf  --exclude=path
+
+-------------------------------------------------------------------------
+程序安装:
+
+1)源码安装
+
+源文件 ------------------>编译-------------------->可执行文件
+
+(1)获取源文件的安装包
+*.tar.gz  *.tar.bz2 *.zip
+
+解压缩 --> 安装目录 --> 进入目录
+
+(2)检查与配置
+./configure --help
+./configure --prefix=path
+
+(3)编译
+make
+
+(4)安装
+make install
+启动  /usr/local/apache2/bin/apachectl start
+vim  /usr/local/apache2/conf/httpd.conf
+
+# If your host doesn't have a registered DNS name, enter its IP address here.
+#
+ServerName 192.168.91.128（LInux系统的IP）:80
+
+rz 文件上传(非目录)
+sz 文件下载(非目录)
+
+2)rpm包安装
+redhat 
+
+安装包  --->  *.rpm
+
+(1)获取rpm包
+
+(2)检查是否安装了程序
+rpm -qa | grep 'key'
+
+(3)安装
+rpm -ivh *.rpm  --nodeps --force
+rpm -Uvh *.rpm
+
+(4)卸载
+rpm -e  key 
+earse
+
+
+------------------------------------------------------------------------------------------------
+作业:
+
+将课堂上讲过的Linux命令绘制成一副思维导图,发送至 caizhiguo@51testing.com
+截至日期2015-6-15
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

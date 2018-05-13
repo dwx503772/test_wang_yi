@@ -1,0 +1,3 @@
+1、启动windows操作系统
+2、将Counter.exe文件拷贝到任意目录下
+3、无需安装，双击Counter.exe文件可自动运行

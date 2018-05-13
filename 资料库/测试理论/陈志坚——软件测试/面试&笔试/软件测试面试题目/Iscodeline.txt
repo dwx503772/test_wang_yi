@@ -1,0 +1,77 @@
+/////////////////////////////////////////////////////////////////////////////////
+//Function:     BOOL IsCodeLine（CString szStatFileLine
+//                              ,BOOL &bIsComment）
+//Description:  判断当前字符串是否是代码行
+//Calls:        无
+//Input:        szStatFileLine－文件中当前行的字符串，该行字符串不是空行
+//              bIsComment－标识当前行是否处于注释体内。TRUE－处于注释体内，
+//              FALSE－不是处于注释体内
+//Output:       bIsComment:如果该行为注释的最后一行，bIsComment赋值false
+//Return:       RET_OK－是代码行,RET-FAIL－该行为注释行
+//Others:       无
+/////////////////////////////////////////////////////////////////////////////////
+BOOL CCounter::IsCodeLine(CString szStatFileLine,BOOL &bIsComment)
+{
+    //定义代码行标志
+1    int     iCodeFlag=RET_FAIL;
+    //记录当前字符串的长度
+2    int     iCodeLineLen=0;
+    //循环变量
+3    int     iLoop=0;
+    //从字符串中获取的两个字符，判断是否为"/*"或者"*/"
+4    CString szTmpCommLine;
+    //从字符串中获取的一个字符，判断是否为代码字符
+5    CString szTmpCodeLine;
+    
+	//删除szStatFileLine的首尾空格,tab,回车,换行
+6	szStatFileLine.TrimLeft();
+7	szStatFileLine.TrimRight();
+
+	//iCodeLineLen = szStatFileLine的字符串长度;
+8    iCodeLineLen = szStatFileLine.GetLength();
+	
+	//如果没有读取到字符串的倒数第二个字符，循环继续
+9	while (iLoop < iCodeLineLen - 1)
+	{
+		//szTmpCommLine等于szStatFileLine的第iLoop和第(iLoop+1)个字符;
+10		szTmpCommLine = (CString)szStatFileLine.GetAt(iLoop) + (CString)szStatFileLine.GetAt(iLoop+1);
+		
+		//szTmpCodeLine等于szStatFileLine的第iLoop个字符;
+11		szTmpCodeLine = szStatFileLine.GetAt(iLoop);
+		
+		//如果原来代码未处于注释段中，如果发现字符串"/*"，则注释段开始
+12		if( (szTmpCommLine == "/*") && (bIsComment == FALSE) )
+		{
+			//注释标志位被置为true;
+13			bIsComment = TRUE;
+		
+			//循环变两加2，越过"/*"，读取注释体内的字符
+14			iLoop+=2;
+15			continue;
+		}
+		//如果原来代码处于注释段中，如果发现字符串"*/"，则注释段结束
+16		else if ( (szTmpCommLine == "*/") && ( bIsComment == TRUE) )
+		{
+			//注释标志位被置为false;
+17			bIsComment = FALSE;
+
+			//循环变两加2，越过"*/"，读取注释体外的字符
+18			iLoop+=2;
+19			continue;
+		}
+
+		//如果当前的字符，非tab字符，非空格字符，并且没有处于注释体内，那么
+		//可以判断该行为代码行
+20		else if ( (szTmpCodeLine != "	") && (szTmpCodeLine != " ")
+			&& (bIsComment == false))
+		{
+21			iCodeFlag = RET_OK;
+		}
+
+		//循环变两加1，读取字符串中的下一个字符
+22		iLoop++;
+	}//
+	
+	return iCodeFlag;
+
+}

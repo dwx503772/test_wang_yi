@@ -1,0 +1,41 @@
+base64:
+nettesting@163.com  -->  bmV0dGVzdGluZ0AxNjMuY29t
+nettesting51        -->  bmV0dGVzdGluZzUx
+
+C:\Users\Administrator>telnet smtp.163.com 25
+Trying 202.108.5.141...
+Connected to smtp.126.com (202.108.5.141).
+Escape character is '^]'.
+220 126.com Anti-spam GT for Coremail System (126com[071018])
+ehlo nettesting@163.com //邮箱地址
+250-mail
+250-AUTH LOGIN PLAIN
+250-AUTH=LOGIN PLAIN
+250 8BITMIME
+auth login    //认证登录
+334 dXNlcm5hbWU6
+bmV0dGVzdGluZ0AxNjMuY29t        //邮箱地址的base64编码
+334 UGFzc3dvcmQ6
+bmV0dGVzdGluZzUx                //邮箱密码的base64编码
+235 Authentication successful
+mail from:<nettesting@163.com>  //发件人邮箱地址
+250 Mail OK
+rcpt to:<caizhiguo@51testing.com> //收件人邮箱地址
+250 Mail OK
+data                   //邮件正文
+354 End data with <CR><LF>.<CR><LF>
+subject: How to use telnet to send mail   //邮件主题
+from: "nettesting" <nettesting@163.com>
+to: "caizhiguo" <caizhiguo@51testing.com>
+Content-Type: multipart/mixed; boundary=a  //MIME类型，边界，相当于把邮件划分成几个模块，以--a为分界（a可以随便命名）
+--a
+This is a test mail,thanks  
+see you later                        //正文内容
+--a
+Content-Disposition: attachment; filename="a.txt"   //附件
+--a--   //从data结束
+.       //邮件全部内容结束
+250 Mail OK queued as smtp4,jdKowLB7CjgufrJIgl6YIA==.63330S2 1219657375
+quit    //与服务器断开
+221 Bye
+Connection closed by foreign host.
